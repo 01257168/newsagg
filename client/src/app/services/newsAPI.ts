@@ -60,4 +60,12 @@ export const newsAPI = {
         );
         return response.json();
     },
+
+    // Fetch RSS feed
+    getRSSFeed: async (pageSize = 40, page = 1): Promise<ServerResponse> => {
+        const response = await fetch(
+            `${API_URL}/rss?pageSize=${pageSize}&page=${page}`
+        );
+        return response.json();
+    },
 };

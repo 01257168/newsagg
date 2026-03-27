@@ -39,7 +39,7 @@ export function HeroCarousel({ scrollY }: HeroCarouselProps) {
   useEffect(() => {
     const fetchHeadlines = async () => {
       try {
-        const response = await newsAPI.getTopHeadlines('general', 5);
+        const response = await newsAPI.getRSSFeed(5);
         if (response.success && response.data?.articles) {
           setHeadlines(response.data.articles.slice(0, 5));
         }

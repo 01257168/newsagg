@@ -22,7 +22,7 @@ export function CountryPage() {
       if (!iso) return;
       try {
         setLoading(true);
-        const response = await newsAPI.getCountryHeadlines(iso, 80, 1);
+        const response = await newsAPI.getRSSFeed(80, 1);
         if (response.success && response.data?.articles) {
           setArticles(response.data.articles);
         } else {

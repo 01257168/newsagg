@@ -26,8 +26,7 @@ export function NewsGrid() {
       setLoading(true);
       setError(null);
       try {
-        const category = selectedCategory !== 'all' ? selectedCategory : 'general';
-        const response = await newsAPI.getTopHeadlines(category, 80, page);
+        const response = await newsAPI.getRSSFeed(80, page);
 
         if (response.success && response.data?.articles) {
           let filtered = response.data.articles;

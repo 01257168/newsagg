@@ -5,6 +5,7 @@ const cors = require('cors');
 const app = express();
 const axios = require('axios');
 const mongoose = require('mongoose');
+const Parser = require('rss-parser');
 
 app.use(cors());
 app.use(express.json());
@@ -94,6 +95,73 @@ app.get("/country/:iso", (req, res) => {
     const country = req.params.iso;
     let url = `https://newsapi.org/v2/top-headlines?country=${country}&page=${page}&pageSize=${pageSize}&apiKey=${process.env.API_KEY}`;
     fetchNews(url, res);
+});
+
+// RSS Feed Endpoint
+app.options('/rss', cors());
+app.get('/rss', async (req, res) => {
+    try {
+        const parser = new Parser();
+        const feedUrl = process.env.RSS_FEED_URL || 'https://rss.app/feeds/jsBfoGyODltzU7ig.xml';
+        const feed = await parser.parseURL(feedUrl);
+
+        // Transform RSS feed into NewsAPI format
+        const articles = feed.items.map((item) => {
+            // Extract image from various RSS formats
+            let imageUrl = null;
+            
+            // Try different sources for image
+            if (item.image) {
+                imageUrl = item.image.url || item.image;
+            } else if (item.enclosure && item.enclosure.type?.includes('image')) {
+                imageUrl = item.enclosure.url;
+            } else if (item.media && item.media.length > 0) {
+                imageUrl = item.media[0].url || item.media[0]['media:content']?.url;
+            } else if (item.content) {
+                // Try to extract image from HTML content
+                const imgMatch = item.content.match(/<img[^>]+src="?([^"\s>]+)"?/);
+                if (imgMatch) imageUrl = imgMatch[1];
+            }
+
+            return {
+                source: {
+                    id: feed.title?.toLowerCase().replace(/\s+/g, '-') || 'rss-feed',
+                    name: feed.title || 'RSS Feed'
+                },
+                author: item.creator || item.author || null,
+                title: item.title || '',
+                description: item.contentSnippet || item.description || null,
+                url: item.link || '',
+                urlToImage: imageUrl,
+                publishedAt: item.pubDate || item.isoDate || new Date().toISOString(),
+                content: item.content || item.description || null,
+                categories: item.categories || []
+            };
+        });
+
+        let pageSize = parseInt(req.query.pageSize) || 40;
+        let page = parseInt(req.query.page) || 1;
+        let startIndex = (page - 1) * pageSize;
+        let endIndex = startIndex + pageSize;
+
+        res.json({
+            status: 200,
+            success: true,
+            message: 'RSS feed fetched successfully',
+            data: {
+                status: 'ok',
+                totalResults: articles.length,
+                articles: articles.slice(startIndex, endIndex)
+            }
+        });
+    } catch (error) {
+        res.json({
+            status: 500,
+            success: false,
+            message: 'Error fetching RSS feed',
+            error: error.message
+        });
+    }
 });
 
 // Comments Endpoints

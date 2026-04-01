@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router';
 import { Search, X, Sun, Moon, ChevronDown, Globe, Menu } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useApp } from '../contexts/AppContext';
-import { CATEGORIES, Category } from '../constants';
+import { CATEGORIES, CATEGORY_LABELS, Category } from '../constants';
 import { Language } from '../i18n/translations';
 
 export function Header() {
@@ -39,7 +39,7 @@ export function Header() {
 
   const catLabel = selectedCategory === 'all'
     ? t.allCategories
-    : t[selectedCategory as keyof typeof t] as string;
+    : CATEGORY_LABELS[selectedCategory];
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 h-16 flex items-center px-4 md:px-6 gap-3 border-b backdrop-blur-xl transition-colors duration-300 ${isDark ? 'bg-slate-900/90 border-slate-700/50' : 'bg-white/85 border-white/50'}`}>
@@ -118,9 +118,9 @@ export function Header() {
                   <button
                     key={cat}
                     onClick={() => { setSelectedCategory(cat); setCatOpen(false); }}
-                    className={`w-full text-left px-4 py-2.5 text-sm transition-colors capitalize ${selectedCategory === cat ? 'text-cyan-500 font-semibold' : isDark ? 'text-slate-200 hover:bg-slate-700' : 'text-gray-700 hover:bg-gray-50'}`}
+                    className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${selectedCategory === cat ? 'text-cyan-500 font-semibold' : isDark ? 'text-slate-200 hover:bg-slate-700' : 'text-gray-700 hover:bg-gray-50'}`}
                   >
-                    {t[cat as keyof typeof t] as string}
+                    {CATEGORY_LABELS[cat]}
                   </button>
                 ))}
               </motion.div>
@@ -210,8 +210,8 @@ export function Header() {
             <div className="flex flex-wrap gap-2">
               <button onClick={() => { setSelectedCategory('all'); setMobileMenuOpen(false); }} className={`px-3 py-1.5 rounded-lg text-sm ${selectedCategory === 'all' ? 'bg-cyan-500 text-white' : isDark ? 'bg-slate-700 text-slate-200' : 'bg-gray-100 text-gray-700'}`}>{t.allCategories}</button>
               {CATEGORIES.map(cat => (
-                <button key={cat} onClick={() => { setSelectedCategory(cat as Category); setMobileMenuOpen(false); }} className={`px-3 py-1.5 rounded-lg text-sm capitalize ${selectedCategory === cat ? 'bg-cyan-500 text-white' : isDark ? 'bg-slate-700 text-slate-200' : 'bg-gray-100 text-gray-700'}`}>
-                  {t[cat as keyof typeof t] as string}
+                <button key={cat} onClick={() => { setSelectedCategory(cat as Category); setMobileMenuOpen(false); }} className={`px-3 py-1.5 rounded-lg text-sm ${selectedCategory === cat ? 'bg-cyan-500 text-white' : isDark ? 'bg-slate-700 text-slate-200' : 'bg-gray-100 text-gray-700'}`}>
+                  {CATEGORY_LABELS[cat]}
                 </button>
               ))}
             </div>

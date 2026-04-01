@@ -1,0 +1,2444 @@
+{
+  "status": "ok",
+  "totalResults": 45,
+  "articles": [
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Zachary Cohen, Kristen Holmes",
+      "title": "Behind the scenes and in front of cameras, Hegseth serving as top cheerleader for military power in Iran war",
+      "description": "“He’s still responsible for making sure it’s a success.”Both behind the scenes and in front of cameras Hegseth has been unerringly enthusiastic about the execution of the war.\nAlex Wong/Getty Images“If CNN is writing a story about Secretary Hegseth being a cheerleader for the US military — then absolutely yes.\nAnd President Trump is equally as proud to serve as commander in chief,” White House press secretary Karoline Leavitt told CNN.\nTrump himself has suggested that Hegseth has been keen on continuing the Iran war.\nDuring classified briefings on Capitol Hill about the war, Hegseth has largely avoided deviating from what multiple sources, including Republicans and Democrats, described as a prepared script.",
+      "url": "https://edition.cnn.com/2026/03/31/politics/pete-hegseth-iran-war",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/01-gettyimages-2267378719.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-31T00:00:00",
+      "content": "In the immediate lead-up to the first bombs being dropped on Iran last month, President Donald Trump met with a small group of advisers to discuss options. He made it clear that he wanted to launch a military campaign alongside Israel, multiple sources familiar with the matter told CNN.\n\nIt was at that moment, before an operation, that prior defense secretaries would typically stress to the president that there were potential downsides to such a move. In the case of Iran strikes, those would inc...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.8587,
+        "comparative": 0.3587
+      },
+      "topic": "Politics",
+      "keywords": [
+        "power",
+        "sources",
+        "president",
+        "white",
+        "serving",
+        "press",
+        "war",
+        "cheerleader",
+        "hegseth",
+        "military",
+        "cameras",
+        "iran",
+        "told",
+        "trump",
+        "scenes"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Pete Hegseth"
+        ],
+        "organizations": [
+          "CNN"
+        ],
+        "locations": [
+          "Iran",
+          "Israel",
+          "Tehran",
+          "Strait of Hormuz"
+        ]
+      },
+      "ai_relevance": 0.5438
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Piper Hudspeth Blackburn",
+      "title": "Trump shares renderings of a towering presidential library",
+      "description": "President Donald Trump on Monday shared renderings of what his future presidential library could look like, offering a look into how the planned Florida-based center might eventually commemorate him.\nThe video also includes an Air Force One on display, much like the Air Force One Pavilion at the Ronald Reagan Presidential Library, along with several other aircraft.\nTrump has said that a luxury Qatari jet being transformed into Air Force One would “go directly” to his presidential library after he leaves office.\nEric Trump, the president’s son and head of the library’s foundation, touted the renderings on X Monday night.\n“The Trump Presidential Library will be one of the most magnificent buildings in the world and a living testament to the indelible impact President Trump has made on America and its people,” White House spokesperson Davis Ingle said in a statement.",
+      "url": "https://edition.cnn.com/2026/03/30/politics/trump-library-renderings-miami",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/c-screenshot-2026-03-30-at-7-10-29-pm.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-30T00:00:00",
+      "content": "President Donald Trump on Monday shared renderings of what his future presidential library could look like, offering a look into how the planned Florida-based center might eventually commemorate him.\n\nIn the nearly two-minute-long video shared by the president on Truth Social, a skyscraper dominates the Miami skyline with the Trump name prominently displayed near the top of the structure. Visitors are depicted entering the building through a golden arch adorned with the presidential seal. Once i...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.6596,
+        "comparative": 0.15959999999999996
+      },
+      "topic": "Politics",
+      "keywords": [
+        "shares",
+        "president",
+        "white",
+        "towering",
+        "foundation",
+        "renderings",
+        "video",
+        "library",
+        "presidential",
+        "miami",
+        "florida",
+        "trump"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Trump"
+        ],
+        "organizations": [
+          "Truth Social",
+          "Air Force",
+          "CNN",
+          "Bermello Ajamil"
+        ],
+        "locations": [
+          "Miami",
+          "White House",
+          "Oval Office"
+        ]
+      },
+      "ai_relevance": 0.5859
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Devan Cole",
+      "title": "January 6 protesters seek millions in court for ‘physical and emotional injuries’",
+      "description": "Those actions, the lawsuit claims, were excessive and are grounds for compensatory damages worth tens of millions of dollars for dozens of people.\nThe named plaintiffs – Patrick Sullivan, Marie Sullivan and Alan E. Fischer – say they filed administrative claims for government compensation stemming from their alleged injuries, but those claims have yet to be resolved.\nThe complaint says the total amount of money currently being sought by all 46 people is $18,405,000.00.\n“The actions of the police caused physical and emotional injuries, including but not limited to chemical burns, concussive trauma, emotional distress, and other damages to plaintiffs, class members and thousands of other protesters,” the lawsuit states.\nAt least one named plaintiff – Fischer – was prosecuted for his actions on January 6.",
+      "url": "https://edition.cnn.com/2026/03/30/politics/january-6-attack-lawsuit-police",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/c-gettyimages-1230734250.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-30T00:00:00",
+      "content": "Several people who were at the US Capitol during the January 6, 2021, insurrection are suing the police agencies that worked to defend the building that day, asking a federal court to award them millions of dollars in damages for the “physical and emotional injuries” they say were inflicted on them by law enforcement.\n\nThe class action lawsuit filed Friday at a federal court in Florida contends that the actions of US Capitol Police and members of DC’s police department the day of the riot were a...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.7195,
+        "comparative": 0.21950000000000003
+      },
+      "topic": "Politics",
+      "keywords": [
+        "named",
+        "day",
+        "law",
+        "emotional",
+        "court",
+        "actions",
+        "lawsuit",
+        "money",
+        "injuries",
+        "claims",
+        "capitol",
+        "protesters",
+        "physical",
+        "seek",
+        "millions",
+        "plaintiffs"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Joe Biden"
+        ],
+        "organizations": [
+          "US Capitol Police",
+          "Congress"
+        ],
+        "locations": [
+          "US Capitol",
+          "Florida",
+          "DC"
+        ]
+      },
+      "ai_relevance": 0.6082
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Kevin Liptak, Jennifer Hansler, Kylie Atwood",
+      "title": "As Trump touts ‘reasonable’ Iranian negotiators, there’s uncertainty about their decision-making power",
+      "description": "Top American officials have said publicly they believe he is wounded or even dead, though Iranian officials insist he is alive and in charge.\nStill, officials inside the administration insist the negotiations are real, if preliminary, and that Trump remains hopeful for a deal.\n“Whoever shows up, high level or low level, we don’t expect these issues to be resolved in a few weeks,” the regional source added.\n“They want to take their time,” the regional source said, calling Iran’s ability to snarl the strait “a big factor” in its calculations.\nAnd despite the ongoing military operations, the Iranian regime remains highly ideological, and therefore unlikely to easily bend.",
+      "url": "https://edition.cnn.com/2026/03/30/politics/negotiations-with-iran-trump-us",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2026-03-30t030310z-1229608458-rc2pekabqa1y-rtrmadp-3-usa-trump.JPG?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-30T00:00:00",
+      "content": "As President Donald Trump’s envoys gear up for another go at diplomacy with Iran, a major question hovers over their efforts: do the officials they’re communicating with have the juice to make a deal?\n\nIt’s not entirely clear to American officials whether the regime figures receiving their messages — which have been passed along by Pakistan and Turkey — have the ultimate authority to sign-off on any peace agreement, let alone implement one, US and Gulf officials said.\n\nSo far, Trump appears will...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.7723,
+        "comparative": 0.2723
+      },
+      "topic": "Politics",
+      "keywords": [
+        "touts",
+        "power",
+        "theres",
+        "talks",
+        "war",
+        "remains",
+        "source",
+        "reasonable",
+        "iranian",
+        "iran",
+        "uncertainty",
+        "negotiators",
+        "regional",
+        "regime",
+        "trump",
+        "officials",
+        "decisionmaking"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Trump"
+        ],
+        "organizations": [],
+        "locations": [
+          "Iran",
+          "Pakistan",
+          "Turkey",
+          "US",
+          "Gulf",
+          "Tehran"
+        ]
+      },
+      "ai_relevance": 0.4916
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Piper Hudspeth Blackburn",
+      "title": "Army probing video of Apache helicopters at Kid Rock’s home",
+      "description": "The Army is investigating after musician Kid Rock posted video showing Apache helicopters hovering around his Nashville-area home.\nVideo Ad Feedback US Army investigating Apache helicopter flyover at Kid Rock’s house The Army is investigating after musician Kid Rock posted video showing Apache helicopters hovering around his Nashville-area home.\n0:43 • Source: CNN US Army investigating Apache helicopter flyover at Kid Rock’s house 0:43“An administrative review is underway to assess the mission and verify compliance with regulations and airspace requirements,” Maj. Jonathon Bless said.\nCNN has reached out to the Creative Artists Agency, which represents Kid Rock, for comment.\nKid Rock at his Tennessee home watching an Apache helicopter flyby 0:26 • Source: CNN Kid Rock at his Tennessee home watching an Apache helicopter flyby 0:26“This is a level of respect that sh*t for brains Governor of California will never know,” Kid Rock said in the post, referring to Democratic Gov.",
+      "url": "https://edition.cnn.com/2026/03/30/politics/kid-rock-army-apache-helicopters",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2026-01-28t212125z-1231370270-rc2kajaaijxg-rtrmadp-3-usa-congress-ticket-costs.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-30T00:00:00",
+      "content": "The Army is investigating after musician Kid Rock posted video showing Apache helicopters hovering around his Nashville-area home.\n\nA spokesperson for the 101st Airborne Division told CNN in a statement that the Army is aware of video that appears to show AH‑64 Apache helicopters operating near a private residence in the Nashville area.\n\nVideo Ad Feedback US Army investigating Apache helicopter flyover at Kid Rock’s house The Army is investigating after musician Kid Rock posted video showing Apa...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.9199,
+        "comparative": 0.41990000000000005
+      },
+      "topic": "Politics",
+      "keywords": [
+        "army",
+        "probing",
+        "posted",
+        "helicopter",
+        "kid",
+        "newsom",
+        "apache",
+        "video",
+        "investigating",
+        "rock",
+        "helicopters",
+        "rocks"
+      ],
+      "entities": {
+        "persons": [
+          "Kid Rock",
+          "Jonath",
+          "##on Bless"
+        ],
+        "organizations": [
+          "Army",
+          "101st Airborne Division",
+          "CNN",
+          "Fe",
+          "US Army",
+          "CNN US Army"
+        ],
+        "locations": [
+          "Nashville"
+        ]
+      },
+      "ai_relevance": 0.6698
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Stephen Collinson",
+      "title": "Analysis: Why America’s hard-power military might isn’t ending the Iran war",
+      "description": "But the US president is facing growing questions about the strength of his own deck in the war with Iran.\nElizabeth Frantz/ReutersThe unappealing reality for Trump is that the United States undoubtably has the military might to open the Strait.\nHe told the Financial Times on Sunday that he’d perhaps like to seize Iran’s oil.\nIt has the capacity to eventually lift sanctions on Iranian oil exports and multiple sectors of the economy.\nOne potential US tactic might be to choke off Iran’s oil exports.",
+      "url": "https://edition.cnn.com/2026/03/31/politics/trump-iran-israel-war-strait-of-hormuz-analysis",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/9546221.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-31T00:00:00",
+      "content": "Donald Trump is fond of telling Ukraine it has no cards in its attritional war with Russia. But the US president is facing growing questions about the strength of his own deck in the war with Iran.\n\nSuperficially, the United States, with more than three times Iran’s population and the world’s most powerful military and economy, has an overwhelming edge in the balance of power. Add in Israel’s tested military and all-seeing intelligence machine and it seems an unfair fight.\n\nBut Iran — by turning...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.6103,
+        "comparative": 0.11029999999999995
+      },
+      "topic": "Politics",
+      "keywords": [
+        "war",
+        "house",
+        "hardpower",
+        "military",
+        "iran",
+        "iranian",
+        "oil",
+        "trumps",
+        "isnt",
+        "ending",
+        "americas",
+        "strait",
+        "analysis",
+        "trump",
+        "irans"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Trump"
+        ],
+        "organizations": [],
+        "locations": [
+          "Ukraine",
+          "Russia",
+          "US",
+          "Iran",
+          "United States",
+          "Israel"
+        ]
+      },
+      "ai_relevance": 0.785
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Zachary B. Wolf",
+      "title": "Analysis: Democrats are trying to connect the dots on Trump’s 2026 plan",
+      "description": "He told House Republicans early this month that passing the bill was essential and would “guarantee” election victory.\nHe did not, under questioning from Sen. Elissa Slotkin, a Michigan Democrat, promise there would be no federal agents at polling places.\nICE agents and a federal agent ride an escalator at New York's John F. Kennedy International Airport on March 25, 2026.\nSenate Minority Leader Chuck Schumer wrote in a New York Times op-ed that the voter ID bill was part of Trump’s plan to guarantee the election for Republicans.\nRepublicans in Texas are assuming that Latino voters, among whom Trump made notable gains in 2024, will be there for Republicans not named Trump in 2026.",
+      "url": "https://edition.cnn.com/2026/03/28/politics/save-act-2026-midterm-election-democrats-analysis",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/05-ap24310522313465.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-28T00:00:00",
+      "content": "The next election is always the most important for politicians on the ballot, which in this year’s midterms will be every member of the US House and about a third of the Senate.\n\nBut in the case of these particular midterms, leaders on both sides are suggesting the future of the republic is at stake.\n\n“Free and fair elections are the cornerstone of our democracy, but right now they are under threat,” former President Barack Obama told Virginians in a March ad promoting the state’s redistricting ...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.8253,
+        "comparative": 0.32530000000000003
+      },
+      "topic": "Politics",
+      "keywords": [
+        "trying",
+        "dots",
+        "voting",
+        "2026",
+        "voter",
+        "states",
+        "bill",
+        "election",
+        "republicans",
+        "plan",
+        "agents",
+        "trumps",
+        "connect",
+        "democrats",
+        "analysis",
+        "trump",
+        "polling"
+      ],
+      "entities": {
+        "persons": [
+          "Barack Obama",
+          "Donald Trump",
+          "Brian Kilm"
+        ],
+        "organizations": [
+          "US House",
+          "Senate",
+          "##P",
+          "Congress",
+          "MAGA",
+          "Fox News"
+        ],
+        "locations": [
+          "Virginia"
+        ]
+      },
+      "ai_relevance": 0.5511
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Zachary B. Wolf",
+      "title": "Analysis: California’s good government dream has a nightmare flaw for state Democrats",
+      "description": "The issue is not that there’s no viable Democratic candidate, but that there may be too many.\nRepublican candidates for California governor Steve Hilton, left, and Chad Bianco.\nHe told me it’s not just the top-two primary system that is to blame for Democrats’ problem.\nTop-tier California Democrats, like former Vice President Kamala Harris and Sen. Alex Padilla, for instance, passed on the race.\nThere have also been multiple instances of Democratic candidates trying to elevate a Republican in the primary to avoid having to run against another Democrat.",
+      "url": "https://edition.cnn.com/2026/03/27/politics/california-governor-race-republican-democrat-candidates-analysis",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2244585424.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-27T00:00:00",
+      "content": "A version of this story appeared in CNN’s What Matters newsletter. To get it in your inbox, sign up for free here.\n\nVoters in the biggest blue state could theoretically be choosing between two Republican candidates for governor in in November — a wacky but not impossible outcome of the state’s nonpartisan primary system.\n\nThe issue is not that there’s no viable Democratic candidate, but that there may be too many.\n\nUnder the state’s election rules — approved by voters in 2010 — the top two candi...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.9269,
+        "comparative": 0.42689999999999995
+      },
+      "topic": "Politics",
+      "keywords": [
+        "flaw",
+        "dream",
+        "system",
+        "nightmare",
+        "democratic",
+        "election",
+        "primary",
+        "state",
+        "californias",
+        "california",
+        "candidates",
+        "governor",
+        "democrats",
+        "analysis",
+        "candidate",
+        "good"
+      ],
+      "entities": {
+        "persons": [
+          "Steve Hilton",
+          "Chad Bianco"
+        ],
+        "organizations": [
+          "CNN",
+          "What Matters"
+        ],
+        "locations": [
+          "UK",
+          "US"
+        ]
+      },
+      "ai_relevance": 0.8529
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Stephen Collinson",
+      "title": "Analysis: Trump is baffled that Iran won’t end the war he started",
+      "description": "President Donald Trump is desperate to sell the story that the Islamic Republic is ready to end the war.\nBut so far, the Iranians aren’t responding to Trump’s increasingly obvious desire to end the war he started, leaving the president puzzled about their intentions.\nPeace negotiations are often preceded by posturing as each side cultivates its political case.\nIt wants concrete undertakings to ensure the war doesn’t resume and the payment of war reparations to Iran.\nTrita Parsi of the Quincy Institute for Responsible Statecraft believes Iran, like Trump, does have an incentive to end the war, and that diplomacy therefore has a chance.",
+      "url": "https://edition.cnn.com/2026/03/26/politics/trump-iran-peace-talks-us-troops-analysis",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2026-03-26t002229z-1702998626-rc2zbkavscft-rtrmadp-3-usa-trump.JPG?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-26T00:00:00",
+      "content": "Iran doesn’t seem to be susceptible to the art of the deal.\n\nPresident Donald Trump is desperate to sell the story that the Islamic Republic is ready to end the war.\n\nBut there’s no public sign yet from Tehran that it’s poised to help him walk back a crisis that he triggered by obliterating his own previous diplomatic effort nearly four weeks ago.\n\n“They want to make a deal so badly, but they’re afraid to say it because they figure they’ll be killed by their own people,” Trump told members of Co...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.7054,
+        "comparative": 0.20540000000000003
+      },
+      "topic": "Politics",
+      "keywords": [
+        "president",
+        "peace",
+        "war",
+        "baffled",
+        "end",
+        "started",
+        "iran",
+        "analysis",
+        "iranian",
+        "trumps",
+        "negotiations",
+        "strait",
+        "wont",
+        "trump"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Trump"
+        ],
+        "organizations": [
+          "Congress"
+        ],
+        "locations": [
+          "Iran",
+          "Islamic Republic",
+          "Tehran"
+        ]
+      },
+      "ai_relevance": 0.6164
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Zachary B. Wolf, Boer Deng, Dugald Mcconnell, Austin Culpepper",
+      "title": "Epic flurry: How Trump has shifted his stances on Iran repeatedly",
+      "description": "Trump speaking about the Iran war: what is victory?\n0:21 • Source: CNN Trump speaking about the Iran war: what is victory?\nAnd rather than accepting surrender, Trump is now talking about getting a deal in talks with Iran.\nIn the first few days of the war, Trump predicted that the operation would take about a month.\n0:15 • Source: CNN Trump speaking about the Iran war: ground troops?",
+      "url": "https://edition.cnn.com/2026/03/25/politics/watch-how-trump-has-shifted-his-stance-over-three-weeks-on-almost-everything-iran",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/screenshot-2026-03-24-at-5-08-08-pm.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-25T00:00:00",
+      "content": "Over the course of nearly a month since the first US strikes on Iran, President Donald Trump has yo-yoed from demanding “unconditional surrender” to teasing a possible detente.\n\nConfusion has become a mark of this war.\n\nTrump has dubiously claimed Iran posed an “imminent” threat to the US, months after declaring the US had “obliterated” Iran’s nuclear capabilities. He’s given a multitude of reasons for launching a war in the first place. He has declared victory scores of times, only to qualify t...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.53,
+        "comparative": 0.030000000000000027
+      },
+      "topic": "Politics",
+      "keywords": [
+        "president",
+        "repeatedly",
+        "say",
+        "flurry",
+        "war",
+        "stances",
+        "won",
+        "surrender",
+        "shifted",
+        "iran",
+        "troops",
+        "iranian",
+        "dont",
+        "trump",
+        "epic"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Trump"
+        ],
+        "organizations": [
+          "82nd Airborne Division"
+        ],
+        "locations": [
+          "US",
+          "Iran",
+          "Middle East"
+        ]
+      },
+      "ai_relevance": 0.493
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Stephen Collinson",
+      "title": "Analysis: Trump’s new red line could set the Iran war on a fateful course",
+      "description": "On Friday, President Donald Trump said he was considering “winding down” his war with Iran.\nBut a day later, he threatened to “obliterate” the country’s power plants in an escalation that could further tip the conflict out of control.\nAttacking power plants might build fresh pressure on Iran’s revolutionary armed forces, which control much of the civilian infrastructure.\nBut such operations might require the use of ground troops, in a gamble even greater than Trump’s threatened assaults on Iranian power plants.\nThese signs of continuing capability make Trump’s decision over his threat to strike power plants even more profound.",
+      "url": "https://edition.cnn.com/2026/03/23/politics/trump-iran-war-strait-of-hormuz-oil-gas-prices-analysis",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2267265403.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-23T00:00:00",
+      "content": "On Friday, President Donald Trump said he was considering “winding down” his war with Iran. But a day later, he threatened to “obliterate” the country’s power plants in an escalation that could further tip the conflict out of control.\n\nErratic messaging on a war entering its fourth week is becoming a pattern.\n\nTrump previously demanded allies send ships to reopen the Strait of Hormuz — a vital oil export choke point. When they demurred, he said he didn’t want help and branded them cowards for no...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.71,
+        "comparative": 0.20999999999999996
+      },
+      "topic": "Politics",
+      "keywords": [
+        "power",
+        "course",
+        "war",
+        "plants",
+        "strategy",
+        "point",
+        "red",
+        "iran",
+        "trumps",
+        "oil",
+        "line",
+        "set",
+        "strait",
+        "analysis",
+        "trump",
+        "irans",
+        "fateful"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Trump"
+        ],
+        "organizations": [],
+        "locations": [
+          "Iran",
+          "Strait of Hormuz"
+        ]
+      },
+      "ai_relevance": 0.6045
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Terence Burlij",
+      "title": "CNN’s guide to the most important elections of 2026",
+      "description": "Democrats will also choose a nominee for governor to run against incumbent GOP Gov.\nThere’s seemingly less drama in the outcome of the Senate primaries in North Carolina, where former Democratic Gov.\nMay 5: OhioThe Ohio Senate race is effectively set, with GOP Sen. Jon Husted and former Democratic Sen. Sherrod Brown on a collision course for the November general election.\nThe Democratic primary features state Sen. Zach Wahls and state Rep. Josh Turek, a two-time Paralympic gold medalist in wheelchair basketball.\nSeptember 8: New HampshireThe GOP primary in New Hampshire features two former senators seeking comebacks with John E. Sununu and Scott Brown.",
+      "url": "https://edition.cnn.com/2026/01/09/politics/2026-election-calendar",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/primary-calendar-hp-art-largetease.png?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-01-09T00:00:00",
+      "content": "Washington —\n\nThis year’s midterms will not only shape the final two years of Donald Trump’s presidency; they’ll determine what politics after Trump might start to look like.\n\nA series of races that starts with primaries on March 3 will either preserve Republican majorities in Congress, helping Trump to push through his agenda, or give Democrats control of either the US House or Senate and the ability to stop his legislative priorities and open investigations into him.\n\nAlong the way, candidates...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.8858,
+        "comparative": 0.38580000000000003
+      },
+      "topic": "Politics",
+      "keywords": [
+        "important",
+        "2026",
+        "race",
+        "elections",
+        "democratic",
+        "gov",
+        "primary",
+        "state",
+        "sen",
+        "cnns",
+        "rep",
+        "republican",
+        "senate",
+        "guide",
+        "gop"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Trump"
+        ],
+        "organizations": [
+          "Congress",
+          "US House",
+          "Senate"
+        ],
+        "locations": [
+          "Washington",
+          "Texas",
+          "North Carolina Texas"
+        ]
+      },
+      "ai_relevance": 0.6046
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Cnn Staff",
+      "title": "Fact checking Trump’s State of the Union address",
+      "description": "President Donald Trump made numerous false or misleading claims in his State of the Union address on Tuesday night.\nFrom CNN’s Daniel DaleFact check: Trump’s baseless claim about the economyPresident Joe Biden delivers his farewell address to the nation from the Oval Office of the White House, on January 15, 2025.\nThe Observer published its own fact check on Tuesday night noting Trump’s claim was not true.\nBut Trump’s claim here was about their words, not their actions.\n“The US violent crime rate in 2024 was the lowest since 1969 and the property crime rate was the lowest since 1961.",
+      "url": "https://edition.cnn.com/2026/02/24/politics/fact-check-state-of-the-union",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2026-02-25t022132z-896378196-rc2qsjaglvjc-rtrmadp-3-usa-trump-congress.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-02-24T00:00:00",
+      "content": "President Donald Trump made numerous false or misleading claims in his State of the Union address on Tuesday night.\n\nMany of them were long-debunked falsehoods familiar from his rallies, interviews and social media posts. These include various lies disparaging the fairness of US elections, his false claim that he ended wars that were never actually wars or never actually ended, and his fictional “$18 trillion” figure for supposed investment in the US over the past year.\n\nThe subject on which he ...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.7198,
+        "comparative": 0.2198
+      },
+      "topic": "Politics",
+      "keywords": [
+        "claim",
+        "check",
+        "checking",
+        "cnns",
+        "tax",
+        "crime",
+        "state",
+        "rate",
+        "daniel",
+        "trumps",
+        "address",
+        "2025",
+        "fact",
+        "union",
+        "trump"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Trump",
+          "B",
+          "##iden"
+        ],
+        "organizations": [
+          "State of the Union"
+        ],
+        "locations": [
+          "US"
+        ]
+      },
+      "ai_relevance": 0.6129
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "John King",
+      "title": "A year into Trump’s second term, Iowa voters offer clues for the midterm elections",
+      "description": "Trump carried Iowa in all three of his White House runs, with a bigger share of the vote each time.\nAnd I think Trump has proved himself.\nMudd knows Trump voters who don’t care as much about voting when Trump is not on the ballot.\nBut the new county Democratic chairwoman, Michele Pegg, said voter registration drives and door-to-door canvassing are on the horizon.\nKnock on a door.”This story has been updated to clarify Trump’s share of the vote in Iowa in the past three presidential elections.",
+      "url": "https://edition.cnn.com/2026/01/19/politics/iowa-voters-2026-elections-trump-first-year-aotm",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/king-john-aotm-iowa-one-year.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-01-19T00:00:00",
+      "content": "Kellerton, Iowa —\n\nShanen Ebersole is smiling, keeping an eye on her cows as they graze. Calving season is soon, so election season will have to wait.\n\n“We’ll walk them the mile and a half home in a month or so,” Ebersole tells a visitor. “Then they will calve in a pasture just like this. So, these are all our old mama girls.”\n\nAs we walk, the cows give an occasional gaze but mostly go about their business — calmly, with occasional bursts of playfulness.\n\n“I wish Washington could get along like ...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.6409,
+        "comparative": 0.14090000000000003
+      },
+      "topic": "Politics",
+      "keywords": [
+        "voters",
+        "mudd",
+        "clues",
+        "elections",
+        "think",
+        "sarcone",
+        "democratic",
+        "election",
+        "midterm",
+        "offer",
+        "county",
+        "second",
+        "trumps",
+        "ebersole",
+        "term",
+        "iowa",
+        "dont",
+        "trump"
+      ],
+      "entities": {
+        "persons": [
+          "Shane",
+          "##n Ebersole",
+          "E",
+          "”",
+          "Ebers",
+          "Nikki Haley",
+          "Donald Trump",
+          "Trump"
+        ],
+        "organizations": [],
+        "locations": [
+          "Kellerton",
+          "Iowa",
+          "Washington"
+        ]
+      },
+      "ai_relevance": 0.699
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Em Steck, Andrew Kaczynski",
+      "title": "A look at how Kathy Ruemmler advised Jeffrey Epstein’s media strategy",
+      "description": "Kathy Ruemmler, Former White House Counsel, appears on \"Meet the Press\" in Washington, DC, on June 29, 2014.\nBut the exchange offers a revealing window into Epstein’s relationship with Ruemmler and how he discussed her with others.\n“Reminder: Kathy Ruemmler to see [redacted] today for a facial at 1pm,” read one entry from March 2016.\nAnother entry read, “Reminder: Kathy Ruemmler to have the Glam Squad to her NY apt at 9am!” from February 2018.\n“I would feel burned if I was them.”In one exchange with Ruemmler, Epstein appeared to make light of his 2008 conviction.",
+      "url": "https://edition.cnn.com/2025/12/11/politics/kfile-kathy-ruemmler-epstein-emails-epstein-files-invs-vis",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/epstein-kathy-card.png?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2025-12-11T00:00:00",
+      "content": "When billionaire sex offender Jeffrey Epstein needed legal advice, help responding to negative press, or just moral support, he often turned to an unexpected confidante – Kathy Ruemmler, an elite attorney who served two US presidents and was once a top candidate for US attorney general.\n\nAs thousands of new documents tied to Epstein have been released, many of those closest to him have paid a steep price for their friendship by forfeiting influential jobs and weathering fierce public blowback. Y...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.7529,
+        "comparative": 0.2529
+      },
+      "topic": "Politics",
+      "keywords": [
+        "jeffrey",
+        "statement",
+        "2019",
+        "white",
+        "sachs",
+        "epsteins",
+        "advised",
+        "house",
+        "epstein",
+        "ruemmler",
+        "media",
+        "kathy",
+        "look",
+        "strategy",
+        "relationship"
+      ],
+      "entities": {
+        "persons": [
+          "Jeffrey Epstein",
+          "Kathy Ruemmler",
+          "E",
+          "##ps",
+          "##tein",
+          "Ruemmler",
+          "Barack Obama"
+        ],
+        "organizations": [
+          "Goldman Sachs",
+          "CNN KFile"
+        ],
+        "locations": [
+          "US",
+          "White House"
+        ]
+      },
+      "ai_relevance": 0.4913
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Ben Church",
+      "title": "Max Verstappen: Why the four-time world champion is considering walking away from F1",
+      "description": "He may be a four-time world champion and one of the faces of Formula 1, but Max Verstappen is not having a good time in the sport he once loved.\nIn addition to his issues within the sport, Verstappen is also entering a new chapter of his life off the track.\nVerstappen celebrating his fourth world title in Las Vegas on November 23, 2024.\nAnd yeah, at the moment, that’s not really the case.”Even before Sunday’s race, you could tell Verstappen was in an irritable mood.\nAnd of course, he’s not confirming he definitely will walk away at the end of the season.",
+      "url": "https://edition.cnn.com/2026/03/30/sport/max-verstappen-f1-unhappy-retirement",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2268863751-2.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-30T00:00:00",
+      "content": "He may be a four-time world champion and one of the faces of Formula 1, but Max Verstappen is not having a good time in the sport he once loved.\n\nFor a while now, the Dutchman has seemed unsettled and unhappy with the direction F1 is heading, so much so that he’s now openly considering walking away from the sport entirely at the end of the season.\n\nThe 28-year-old’s frustrations came to the fore again after the Red Bull driver finished eighth at the Japanese Grand Prix this weekend, venting his ...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.6409,
+        "comparative": 0.14090000000000003
+      },
+      "topic": "Sport",
+      "keywords": [
+        "max",
+        "japanese",
+        "fourtime",
+        "hes",
+        "race",
+        "verstappen",
+        "f1",
+        "sport",
+        "driver",
+        "away",
+        "champion",
+        "considering",
+        "races",
+        "walking",
+        "longer",
+        "world",
+        "prix"
+      ],
+      "entities": {
+        "persons": [
+          "Max Verstappe",
+          "Verstappe"
+        ],
+        "organizations": [
+          "F1",
+          "Red Bull",
+          "BBC Sport"
+        ],
+        "locations": []
+      },
+      "ai_relevance": 0.9206
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Wayne Sterling, Jacob Lev, Kevin Dotson",
+      "title": "Illinois and Arizona punch their tickets to the men’s Final Four. Two more teams will join them on Sunday",
+      "description": "Meanwhile, the women’s NCAA tournament wrapped up the Sweet 16 round on Saturday and tickets will be punched to the women’s Final Four in Phoenix on Sunday.\n3 seed Illinois in Houston.\nThat trend continued in the early minutes of their game against Illinois as Iowa got off to an early 9-0 lead.\nIllinois took its first lead of the game in the early minutes of the second half on an and-one play from David Mirkovic.\nAnd after a 7-0 run in the early minutes of the second half, the WIldcats tied the game at 42-42.",
+      "url": "https://edition.cnn.com/2026/03/28/sport/march-madness-mens-womens-saturday",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2026-03-28t234653z-838151096-mt1usatoday28611388-rtrmadp-3-ncaa-basketball-ncaa-tournament-elite-eight-south-regional-iowa-at-illinois.JPG?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-28T00:00:00",
+      "content": "Two spots remain in the men’s Final Four after dominant wins on Saturday by Illinois and Arizona, who are heading to the NCAA tournament’s final weekend for the first time since the early part of this century.\n\nThe Illini and Wildcats both faced tough challenges but eventually pulled away easily in their Elite Eight games on Saturday night.\n\nMeanwhile, the women’s NCAA tournament wrapped up the Sweet 16 round on Saturday and tickets will be punched to the women’s Final Four in Phoenix on Sunday....",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.5956,
+        "comparative": 0.09560000000000002
+      },
+      "topic": "Sport",
+      "keywords": [
+        "purdue",
+        "wildcats",
+        "join",
+        "final",
+        "tickets",
+        "illinois",
+        "half",
+        "game",
+        "punch",
+        "seed",
+        "second",
+        "womens",
+        "mens",
+        "teams",
+        "guard",
+        "arizona"
+      ],
+      "entities": {
+        "persons": [],
+        "organizations": [
+          "Illinois",
+          "Arizona",
+          "Illini",
+          "Wildcats",
+          "Iowa",
+          "Hawkeyes"
+        ],
+        "locations": [
+          "Phoenix",
+          "Houston"
+        ]
+      },
+      "ai_relevance": 0.4748
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Dana O Neil",
+      "title": "An NCAA tournament loss isn’t just another defeat. For the kids on the court, it’s something so much more",
+      "description": "Washington, DC —There is nothing quite as loud as the silence in a locker room when a season ends.\nFor three consecutive seasons, I saw Villanova players stare blankly after one improbable NCAA Tournament loss stacked on top of another, until the tide finally turned in 2016.\nJust a blank day with hours to fill and a television inexplicably still showing an NCAA tournament that has the nerve to continue on.\nWhat ended for my son – what’s ending for countless sons and daughters in this and every NCAA tournament – is their childhood.\nThat’s what hit me at least in that Michigan State locker room.",
+      "url": "https://edition.cnn.com/2026/03/28/sport/march-madness-ncaa-tournament-defeats",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2268192306a.JPG?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-28T00:00:00",
+      "content": "Washington, DC —\n\nThere is nothing quite as loud as the silence in a locker room when a season ends.\n\nIt is deafening, a pin-drop quiet that feels near sacred. As reporters, our job is to infiltrate that sacred space, to barge in with notebooks and cameras and ask questions that no one wants to answer, that very often no one yet has answers for.\n\nIt’s not the best part of the gig and over the course of a very long career, I have visited more than a few devastated locker rooms.\n\nI have watched Za...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.6677,
+        "comparative": 0.16769999999999996
+      },
+      "topic": "Sport",
+      "keywords": [
+        "tournament",
+        "ncaa",
+        "court",
+        "defeat",
+        "locker",
+        "loss",
+        "spartans",
+        "right",
+        "state",
+        "remember",
+        "kids",
+        "isnt",
+        "college",
+        "game",
+        "room"
+      ],
+      "entities": {
+        "persons": [
+          "Zach Edey",
+          "Gordon Hayward",
+          "J",
+          "##are",
+          "##n Jackson Jr"
+        ],
+        "organizations": [
+          "Butler",
+          "Villanova",
+          "Memphis Grizzlies",
+          "Utah Jazz"
+        ],
+        "locations": [
+          "Washington",
+          "DC"
+        ]
+      },
+      "ai_relevance": 0.5309
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Jacob Lev, Kyle Feldscher",
+      "title": "Tiger Woods arrested on suspicion of DUI following car crash in Florida",
+      "description": "Tiger Woods was arrested Friday on suspicion of driving under the influence, according to Martin County, Florida, Sheriff John Budensiek.\nThe collision caused Woods’ Land Rover to roll onto its side.\nHe was seen leaving the Martin County Jail late Friday, CNN affiliate WPBF reported.\nWPBF/Martin County Sheriff's OfficeTiger Woods is driven from the Martin County Jail in Stuart, Florida, after being released on Friday night.\nMartin County Sheriff's Office/APBudensiek downplayed if Woods would get “preferential treatment” while in custody.",
+      "url": "https://edition.cnn.com/2026/03/27/sport/tiger-woods-involved-in-rollover-crash-in-florida",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/ap26086762245259.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-27T00:00:00",
+      "content": "Tiger Woods was arrested Friday on suspicion of driving under the influence, according to Martin County, Florida, Sheriff John Budensiek.\n\nWoods was driving a Land Rover and clipped a pickup truck pulling a small trailer, Budensiek told reporters. The collision caused Woods’ Land Rover to roll onto its side.\n\nWhen police arrived on scene, Woods showed signs of impairment, Budensiek said.\n\n“Our DUI investigators came to the scene here. And Mr. Woods did exemplify the signs of impairment,” Budensi...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.6716,
+        "comparative": 0.17159999999999997
+      },
+      "topic": "Sport",
+      "keywords": [
+        "trying",
+        "suspicion",
+        "woods",
+        "arrested",
+        "car",
+        "tiger",
+        "land",
+        "budensiek",
+        "sheriffs",
+        "following",
+        "dui",
+        "crash",
+        "county",
+        "driving",
+        "martin",
+        "vehicle",
+        "florida",
+        "rover"
+      ],
+      "entities": {
+        "persons": [
+          "Tiger Woods",
+          "John Budensiek",
+          "Woods",
+          "Budensiek",
+          "Budens",
+          "Jason Oter"
+        ],
+        "organizations": [
+          "Land Rover",
+          "CNN",
+          "W",
+          "##PBF",
+          "AP"
+        ],
+        "locations": [
+          "Martin County",
+          "Florida",
+          "Martin County Jail"
+        ]
+      },
+      "ai_relevance": 0.4804
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Dana O Neil",
+      "title": "UConn’s last-gasp 3-pointer to shock Duke was, appropriately, on the edge of madness",
+      "description": "The shot this shooter shot was even more improbable than the one Jenkins drained against North Carolina.\nThis is how he wants his team to be.’’This particularly team has had to grind a lot more than others.\nWhen Duke stomped out like some sort of machine, it was fair to presume the Huskies were out of gas.\n“I’m just trying to process what happened,’’ Duke coach Jon Scheyer said.\nIn March, there’s nowhere else for a boy from Indiana to sink the biggest shot of his career than right on the end of “Madness.”",
+      "url": "https://edition.cnn.com/2026/03/29/sport/uconns-last-gasp-3-pointer-to-shock-duke-was-appropriately-on-the-edge-of-madness",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2268496789.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-29T00:00:00",
+      "content": "Washington, DC —\n\nHe launched his shot, fittingly, just to the right of the two Ss that finish the words “Madness” on the half-court logo. Because where else would an Indiana kid, born to hoop but stuck in a beyond-the-arc hole for 39 minutes and 59 seconds, find basketball immortality other than right on the edge of madness?\n\nBraylon Mullins grew up in Greenfield, Indiana, a bedroom community just outside of Indianapolis. His high school gym was not the massive cathedrals built to serve the alt...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.725,
+        "comparative": 0.22499999999999998
+      },
+      "topic": "Sport",
+      "keywords": [
+        "madness",
+        "duke",
+        "shock",
+        "team",
+        "appropriately",
+        "lastgasp",
+        "shot",
+        "coach",
+        "ball",
+        "indiana",
+        "final",
+        "mullins",
+        "hurley",
+        "3pointer",
+        "edge",
+        "uconns",
+        "huskies"
+      ],
+      "entities": {
+        "persons": [
+          "Braylon Mullins",
+          "Mullin",
+          "Cole",
+          "Clay",
+          "Duke",
+          "Alex Karaban"
+        ],
+        "organizations": [],
+        "locations": [
+          "Washington, DC",
+          "Indiana",
+          "Greenfield",
+          "Indianapolis",
+          "Den"
+        ]
+      },
+      "ai_relevance": 0.5416
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Kyle Feldscher, Jacob Lev",
+      "title": "The Sweet 16 starts with two nail-biters and Purdue and Iowa are moving on. Here’s what to know",
+      "description": "For four teams – Iowa, Illinois, Purdue and Arizona – that number is down to just one.\n2 seeded Purdue shocked No.\n11 seeded Texas 79-77 after Boilermakers forward Trey Kaufman-Renn’s late basket won them the game with 0.7 seconds left.\nKelley L Cox/APKaufman-Renn finished with a team-high 20 points as Purdue will face the winner of Arkansas-Arizona on Saturday in San Jose.\nIowa’s Cinderella run continuesIt was a Big Ten battle and a rivalry game in the Sweet 16.",
+      "url": "https://edition.cnn.com/2026/03/26/sport/march-madness-sweet-16-thursday",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/ap26086059832361.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-26T00:00:00",
+      "content": "For the last few days, the fans of 16 men’s college basketball teams haven’t been able to get one thought out of their heads: Two more wins until the Final Four.\n\nFor four teams – Iowa, Illinois, Purdue and Arizona – that number is down to just one.\n\nAfter surviving the gauntlet that is the opening rounds of March Madness, the Sweet 16 is an accomplishment on its own and for some of these teams – the Hawkeyes especially – the Elite Eight is just a dream. But the chance to play for a national cha...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.6636,
+        "comparative": 0.16359999999999997
+      },
+      "topic": "Sport",
+      "keywords": [
+        "seeded",
+        "purdue",
+        "wildcats",
+        "points",
+        "16",
+        "elite",
+        "seconds",
+        "sweet",
+        "game",
+        "know",
+        "moving",
+        "nailbiters",
+        "run",
+        "heres",
+        "teams",
+        "starts",
+        "iowa"
+      ],
+      "entities": {
+        "persons": [
+          "Trey Kaufman",
+          "Ren"
+        ],
+        "organizations": [
+          "Iowa",
+          "Illinois",
+          "Purdue",
+          "Arizona",
+          "Hawkeyes",
+          "Texas",
+          "Bo",
+          "##ilermakers"
+        ],
+        "locations": [
+          "Texas"
+        ]
+      },
+      "ai_relevance": 0.4879
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Associated Press",
+      "title": "Transgender women athletes banned from Olympics by new IOC policy on female eligibility",
+      "description": "It is unclear how many, if any, transgender women are competing at an Olympic level.\nThe eligibility policy that will apply from the LA Olympics in July 2028 “protects fairness, safety and integrity in the female category,” the IOC said.\nFemale eligibility was a strong theme in a seven-candidate IOC election last year – held after a furor around women’s boxing in Paris – when Coventry’s main rivals pledged a stronger policy to leading on the issue.\nBefore the 2024 Paris Olympics, three top-tier sports — track and field, swimming and cycling — excluded transgender women who had been through male puberty.\nThe order also threatened to “rescind all funds” from organizations that allowed transgender athletes to take part in women’s sports.",
+      "url": "https://edition.cnn.com/2026/03/26/sport/olympics-transgender-women-athletes-banned",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2023-03-28t084542z-1651086240-rc2u20a200tu-rtrmadp-3-olympics-ioc.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-26T00:00:00",
+      "content": "Geneva, Switzerland AP —\n\nTransgender women athletes are now excluded from women’s events at the Olympics after the IOC agreed to a new eligibility policy on Thursday which aligns with US President Donald Trump’s executive order on sports ahead of the 2028 Los Angeles Games.\n\n“Eligibility for any female category event at the Olympic Games or any other IOC event, including individual and team sports, is now limited to biological females,” the International Olympic Committee said, to be determined...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.6637,
+        "comparative": 0.16369999999999996
+      },
+      "topic": "Sport",
+      "keywords": [
+        "test",
+        "female",
+        "olympic",
+        "transgender",
+        "women",
+        "boxing",
+        "eligibility",
+        "banned",
+        "order",
+        "ioc",
+        "womens",
+        "olympics",
+        "policy",
+        "athletes"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Laurel Hubbard"
+        ],
+        "organizations": [
+          "AP",
+          "IOC"
+        ],
+        "locations": [
+          "Geneva",
+          "Switzerland",
+          "Tokyo"
+        ]
+      },
+      "ai_relevance": 0.8609
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Andy Scholes",
+      "title": "MLB Opening Day is here – and so are some next-level ballpark eats",
+      "description": "A fresh lineup of food across Major League Baseball stadiums is rolling out for a fresh new season.\nEverything I tried delivered, but here are my five favorite new ballpark eats.\nLevy RestaurantsThe pork and pickled onions were an awesome combo, and the size of the tacos makes them perfect for ballpark feasting.\nWashington Nationals: Capitol SluggerA half-smoke sausage topped with chili, crispy fried jalapeños and golden fried onions, served with warm cheese sauce for dipping.\nChicago Cubs: Chicken & ChurrosCrispy fried chicken thighs served with golden brown churros, ancho syrup and fresh strawberries.",
+      "url": "https://edition.cnn.com/2026/03/25/sport/mlb-ballpark-eats-baseball-season",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/capitol-slugger.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-25T00:00:00",
+      "content": "A fresh lineup of food across Major League Baseball stadiums is rolling out for a fresh new season. Levy Restaurants brought several of its newest creations directly to CNN Sports, and I got to try them.\n\nFor Levy CEO Andy Lansing, this is the moment they build toward all year.\n\n“We love striking that balance between what I call elevated approachability,” Lansing said. “You want people to come to a ballpark and get all the fan favorites – popcorn, nachos, hot dogs – but you also want to give fol...",
+      "sentiment": {
+        "type": "positive",
+        "score": 0.9256,
+        "comparative": 0.4256
+      },
+      "topic": "Sport",
+      "keywords": [
+        "fried",
+        "eats",
+        "chicken",
+        "day",
+        "onions",
+        "smoky",
+        "hot",
+        "served",
+        "fresh",
+        "opening",
+        "sauce",
+        "mlb",
+        "warm",
+        "nextlevel",
+        "ballpark"
+      ],
+      "entities": {
+        "persons": [
+          "Andy Lansing",
+          "Lansing",
+          "Levy",
+          "Co"
+        ],
+        "organizations": [
+          "Levy Restaurants",
+          "CNN Sports",
+          "Levy",
+          "Los Angeles Dodgers",
+          "Bone Mar",
+          "Levy Restaurant"
+        ],
+        "locations": []
+      },
+      "ai_relevance": 0.8924
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Kyle Feldscher",
+      "title": "Baseball in Japan is more than just a game. The Japanese stars in MLB carry that pressure everywhere they go",
+      "description": "It should never be about self-centered desires or egos.”Players from the Ota Dreams bow before a high school baseball game in Tokyo in 2021.\nPhilip Fong/AFP/Getty ImagesIn Japan, baseball is a life lesson.\nJapanese stars pose for a photo after the Tokyo Series last year.\nFrom then on, more and more Japanese players went to the MLB.\nFans pose for a photo ahead of a Tokyo Series game last year.",
+      "url": "https://edition.cnn.com/2026/03/25/sport/baseball-japan-mlb-homecoming-tokyo-series",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2205863093.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-25T00:00:00",
+      "content": "Watch “Homecoming: The Tokyo Series,” which will begin streaming on the CNN app at 9 a.m. ET on Friday. Subscribe to All Access here.\n\nBaseball in Japan, according to Yasuko Tanahara, starts and ends with a bow.\n\nIt’s meant as a measure of respect – to your teammates, to your opponents, to the umpires, to the fans in the crowd – but it can also be seen as a nod to what the sport means to the culture of a nation that has embraced the American pastime as something more than just a game.\n\nShe’s bee...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.8692,
+        "comparative": 0.3692
+      },
+      "topic": "Sport",
+      "keywords": [
+        "carry",
+        "stars",
+        "series",
+        "players",
+        "japan",
+        "sport",
+        "pressure",
+        "mlb",
+        "baseball",
+        "tokyo",
+        "japanese",
+        "cubs",
+        "game"
+      ],
+      "entities": {
+        "persons": [
+          "Ya",
+          "##su",
+          "##ko Tanahara",
+          "Tanah"
+        ],
+        "organizations": [
+          "CNN",
+          "All",
+          "Yamadanishi Little Wolf",
+          "CNN Films"
+        ],
+        "locations": [
+          "Japan",
+          "Osaka"
+        ]
+      },
+      "ai_relevance": 0.7476
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Associated Press",
+      "title": "Las Vegas and Seattle are a step closer to getting NBA teams after league’s owners approve expansion exploration",
+      "description": "New York AP —Seattle and Las Vegas are one step closer to having NBA teams.\n“Today’s vote reflects our Board’s interest in exploring potential expansion to Las Vegas and Seattle — two markets with a long history of support for NBA basketball,” NBA Commissioner Adam Silver said.\n“It’s a basketball city, basketball culture, so it’s mandatory I think that they get it back over there,” said Murray, a Seattle native.\nThe championship round of the NBA Cup, the in-season tournament, has been held in Las Vegas as well.\n“I think Seattle and Las Vegas are two incredible cities,” Silver said in December, speaking about expansion while in Las Vegas for the NBA Cup.",
+      "url": "https://edition.cnn.com/2026/03/25/sport/nba-expansion-seattle-las-vegas",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2023-10-11t015202z-705078261-mt1usatoday21618606-rtrmadp-3-nba-preseason-utah-jazz-at-los-angeles-clippers.JPG?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-25T00:00:00",
+      "content": "New York AP —\n\nSeattle and Las Vegas are one step closer to having NBA teams.\n\nThe league’s board of governors voted Wednesday to approve a plan that will allow NBA officials to “formally explore potential team expansion” to those two cities, which have long been thought of as the front-runners to land franchises.\n\n“Today’s vote reflects our Board’s interest in exploring potential expansion to Las Vegas and Seattle — two markets with a long history of support for NBA basketball,” NBA Commissione...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.5526,
+        "comparative": 0.05259999999999998
+      },
+      "topic": "Sport",
+      "keywords": [
+        "city",
+        "getting",
+        "exploration",
+        "team",
+        "league",
+        "think",
+        "nba",
+        "expansion",
+        "vegas",
+        "step",
+        "basketball",
+        "seattle",
+        "owners",
+        "teams",
+        "leagues",
+        "las"
+      ],
+      "entities": {
+        "persons": [
+          "Adam Silver",
+          "” Silver",
+          "Ryan Sir"
+        ],
+        "organizations": [
+          "New York AP",
+          "NBA",
+          "Board",
+          "P",
+          "##JT Partners"
+        ],
+        "locations": [
+          "Seattle",
+          "Las Vegas",
+          "In",
+          "##glewood",
+          "California"
+        ]
+      },
+      "ai_relevance": 0.9151
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Unknown",
+      "title": "World Athletics gives misdirected US runners extra spots at World Road Running Championships",
+      "description": "Reuters —World ⁠Athletics will allow the United States to field three ⁠extra ⁠runners in the women’s half marathon at this year’s World Road Running Championships after ⁠three leaders ​were led off course during their ⁠national championships earlier this month.\nMcClain, Hurley and Kurgat were ​later compensated as organizers said police assigned to mark out the route had to leave their positions ⁠to respond to an emergency call.\nCNN's Don Riddell reports on how the organization's jury ultimately ruled, despite the course not being \"adequately marked at the point of misdirection.\"\n1:05 • Source: CNN Wrong direction costs half marathoners big money 1:05“USATF will select their four fastest athletes to be their scoring athletes, while non-scoring ​athletes … ⁠will take the three additional places.\n‌The three non-scoring athletes will wear USA ⁠national kit but of a different style to the four scoring athletes,” the statement added.",
+      "url": "https://edition.cnn.com/2026/03/25/sport/world-athletics-half-marathon-extra-spots-usatf",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2235280987-20260325150232806.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-25T00:00:00",
+      "content": "Reuters —\n\nWorld ⁠Athletics will allow the United States to field three ⁠extra ⁠runners in the women’s half marathon at this year’s World Road Running Championships after ⁠three leaders ​were led off course during their ⁠national championships earlier this month.\n\nJess McClain, Emma ​Grace Hurley and Ednah Kurgat were leading the race with two miles left when they were led astray, missing out on the podium and a qualification for the WRRC, ⁠which is reserved for the top four finishers.\n\nMcClain,...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.9152,
+        "comparative": 0.4152
+      },
+      "topic": "Sport",
+      "keywords": [
+        "marathon",
+        "field",
+        "athletics",
+        "kurgat",
+        "spots",
+        "money",
+        "nonscoring",
+        "running",
+        "half",
+        "hurley",
+        "gives",
+        "extra",
+        "runners",
+        "misdirected",
+        "road",
+        "world",
+        "championships",
+        "athletes"
+      ],
+      "entities": {
+        "persons": [
+          "Jess McClain",
+          "Emma Grace Hurley",
+          "Ednah Kurgat",
+          "M",
+          "##cClain",
+          "Hu",
+          "##rley",
+          "Kurga"
+        ],
+        "organizations": [
+          "Reuters",
+          "World Athletics",
+          "WRRC"
+        ],
+        "locations": [
+          "United States",
+          "US",
+          "Copenhagen"
+        ]
+      },
+      "ai_relevance": 0.4643
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Associated Press",
+      "title": "Liverpool star Mohamed Salah to leave club at end of season",
+      "description": "AP —Liverpool star Mohamed Salah announced Tuesday he will leave the English club at the end of the season, marking an earlier-than-planned departure for one of the club’s greatest-ever scorers and soccer’s biggest names.\nHowever, his public clash with the club and manager Arne Slot this season might have tarnished his legacy in the eyes of some fans.\nLiverpool manager Arne Slot with Mohamed Salah after he was substituted from the club's game on March 18.\nLiverpool’s final Premier League game of the season is against Brentford at Anfield on May 24.\nThe Champions League final is the following weekend, but Liverpool is the underdog heading into a quarterfinals matchup with Paris Saint-Germain.",
+      "url": "https://edition.cnn.com/2026/03/24/sport/mohamed-salah-leaving-liverpool",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/ap26077779506126.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-24T00:00:00",
+      "content": "AP —\n\nLiverpool star Mohamed Salah announced Tuesday he will leave the English club at the end of the season, marking an earlier-than-planned departure for one of the club’s greatest-ever scorers and soccer’s biggest names.\n\nThe 33-year-old Egypt forward, who has scored 255 goals in 435 appearances for Liverpool, “reached an agreement” to quit the team a year before his contract was due to expire, the Premier League champions said.\n\nSalah’s form has dipped in his ninth year at Anfield, to such a...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.7409,
+        "comparative": 0.2409
+      },
+      "topic": "Sport",
+      "keywords": [
+        "season",
+        "star",
+        "salah",
+        "team",
+        "slot",
+        "liverpool",
+        "league",
+        "mohamed",
+        "end",
+        "premier",
+        "leave",
+        "club",
+        "champions",
+        "manager"
+      ],
+      "entities": {
+        "persons": [
+          "Mohamed Salah",
+          "Salah"
+        ],
+        "organizations": [
+          "AP",
+          "Liverpool",
+          "In"
+        ],
+        "locations": [
+          "Egypt",
+          "Anfield"
+        ]
+      },
+      "ai_relevance": 0.539
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Kyle Feldscher",
+      "title": "Tiger Woods crashes out, arrested and charged with DUI",
+      "description": "For years after Tiger Woods exploded into the sporting consciousness, he was idolized for one thing: Winning.\nGolfer Tiger Woods stands by his overturned vehicle in Florida on Friday Jason Oteri/APWhen police arrived on the scene, they immediately suspected Woods was inebriated.\nHis fans now have a question that is simple to ask and difficult to answer: Is Tiger Woods OK?\nVideo Ad Feedback Tiger Woods jailed, arrested on suspicion of DUI after car crash 6:58 • Source: CNN Tiger Woods jailed, arrested on suspicion of DUI after car crash 6:58Each of these valleys have been followed by a climb to get back on the course in competition, the place where Woods thrives.\nNow the cycle that has repeated for the better part of two decades begins again for Tiger Woods.",
+      "url": "https://edition.cnn.com/2026/03/28/sport/tiger-woods-arrest-analysis",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2250594363.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-28T00:00:00",
+      "content": "For years after Tiger Woods exploded into the sporting consciousness, he was idolized for one thing: Winning. Glorious, emphatic winning.\n\nIt was a 12-stroke win in 1997 at the Masters that announced his arrival as a phenomenon unlike anyone golf had seen before. It was the legendary 2008 US Open when he fought through a broken leg to win a dramatic tournament that seemed to prove him immune to vulnerability. All through the years in between, his willful yet easy-looking dominance carried his ga...",
+      "sentiment": {
+        "type": "positive",
+        "score": 0.8461,
+        "comparative": 0.34609999999999996
+      },
+      "topic": "Sport",
+      "keywords": [
+        "woods",
+        "crashes",
+        "arrested",
+        "car",
+        "tiger",
+        "masters",
+        "charged",
+        "dui",
+        "crash",
+        "golf",
+        "fans",
+        "millions",
+        "florida"
+      ],
+      "entities": {
+        "persons": [
+          "Tiger Woods"
+        ],
+        "organizations": [],
+        "locations": []
+      },
+      "ai_relevance": 0.5837
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Gawon Bae",
+      "title": "Choi Ga-on’s incredible journey from fractured back to broken bones and Olympic gold",
+      "description": "Choi crashing in the halfpipe final on February 12 in Livigno, Italy.\nPatrick Smith/Getty Images Europe/Getty Images“Both my knees were not moving, so I thought that was the end of my run,” Choi recently told CNN Sports from the South Korean capital.\nVideo Ad Feedback Meet the high school senior who won Olympic gold At just 17, South Korea’s Choi Ga-on won gold in the women’s snowboard halfpipe at the Winter Olympics, beating US star Chloe Kim.\nChoi treated by medical staff after her crash in the Olympic halfpipe final at Livigno Snow Park on February 12.\nBut I’m enjoying it so far.”(From L) Silver medalist Chloe Kim, Choi and bronze medalist Mitsuki Ono celebrate on the podium after the snowboard women's halfpipe final on February 12.",
+      "url": "https://edition.cnn.com/2026/03/27/sport/choi-gaon-korean-snowboarder-olympics",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2026-02-12t184612z-1813123114-up1em2c1g4zew-rtrmadp-3-olympics-2026-snowboard.JPG?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-27T00:00:00",
+      "content": "Seoul, South Korea —\n\nChoi Ga-on walks in very quietly with a faint smile, seemingly camera-shy. But just a month ago, this teenage South Korean snowboarder stunned the world when she made an incredible comeback from injury to complete her final halfpipe run at the Winter Olympics, clinching the gold despite a brutal crash.\n\nExpectations were high coming into Italy; Choi is a prodigy in the sport, having racked up a plethora of titles at the X Games and International Ski Federation (FIS) World C...",
+      "sentiment": {
+        "type": "positive",
+        "score": 0.5222,
+        "comparative": 0.022199999999999998
+      },
+      "topic": "Sport",
+      "keywords": [
+        "olympic",
+        "won",
+        "halfpipe",
+        "final",
+        "journey",
+        "gold",
+        "incredible",
+        "fractured",
+        "broken",
+        "bones",
+        "gaons",
+        "kim",
+        "run",
+        "choi",
+        "snowboard",
+        "olympics",
+        "world"
+      ],
+      "entities": {
+        "persons": [
+          "Choi Ga",
+          "Choi",
+          "Patrick Smith"
+        ],
+        "organizations": [],
+        "locations": [
+          "Seoul",
+          "South Korea",
+          "Winter",
+          "Italy",
+          "Livigno"
+        ]
+      },
+      "ai_relevance": 0.7147
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Dana O Neil",
+      "title": "Yaxel Lendeborg’s mom practically dragged him to basketball stardom. As she battles cancer, he’s paying her back",
+      "description": "All before 9 a.m.For years, through her own father’s death and her son’s high school years, Raposo watched Lendeborg slowly slip away.\nLendeborg was cut from his middle-school team and didn’t have the grades to make his high school team.\nHe was only disappointed that his high school friends didn’t want to join him.\nThere, in the minivan, she laid out the plan she had cultivated with the assist of guidance counselors at the high school.\nWhich is an absurd list of options for a kid who barely played high school ball.",
+      "url": "https://edition.cnn.com/2026/03/27/sport/yaxel-lendeborg-sweet-16-michigan",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2267728584-20260326213535466.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-27T00:00:00",
+      "content": "Washington, DC —\n\nEach morning, Yissel Raposo woke up early to make sure her three daughters had what they needed to get out the door – breakfast, belongings, school supplies.\n\nThen she packed her son, Yaxel Lendeborg, in the car and drove him through the-not-so-nice downtown part of Camden, New Jersey, to the local community college. Raposo dropped Lendeborg off and then headed to work.\n\nAll before 9 a.m.\n\nFor years, through her own father’s death and her son’s high school years, Raposo watched...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.8636,
+        "comparative": 0.36360000000000003
+      },
+      "topic": "Sport",
+      "keywords": [
+        "stardom",
+        "battles",
+        "mom",
+        "raposo",
+        "hes",
+        "dragged",
+        "paying",
+        "kid",
+        "didnt",
+        "player",
+        "high",
+        "season",
+        "team",
+        "played",
+        "lendeborgs",
+        "practically",
+        "school",
+        "cancer",
+        "yaxel",
+        "lendeborg"
+      ],
+      "entities": {
+        "persons": [
+          "Yi",
+          "##ssel Raposo",
+          "Ya",
+          "##xe",
+          "##l Lendeborg",
+          "Raposo",
+          "Len",
+          "##de",
+          "##borg",
+          "##deborg"
+        ],
+        "organizations": [],
+        "locations": [
+          "Washington",
+          "DC",
+          "Camden",
+          "New Jersey",
+          "Ann Arbor",
+          "Michigan"
+        ]
+      },
+      "ai_relevance": 0.604
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "John Towfighi",
+      "title": "It’s been a volatile month on Wall Street",
+      "description": "New York —Wall Street entered the month of March trading just below record highs.\nOil prices have surged this month, raising concerns about energy inflation, clouding the outlook for central banks and posing headwinds for stocks.\nThe Dow and S&P 500 are set for their worst month since September 2022.\nThe Nasdaq is set for its worst month in a year.\nThe dollar index is up 2.6% this month and on track for its best month since July, benefitting from safe haven demand.",
+      "url": "https://edition.cnn.com/2026/03/31/investing/us-stocks-iran",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/ap26089520125172.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-31T00:00:00",
+      "content": "New York —\n\nWall Street entered the month of March trading just below record highs. But the war with Iran has rocked markets, sending the Dow and Nasdaq into correction territory and putting the S&P 500 on track for its worst quarter since 2022.\n\nOil prices have surged this month, raising concerns about energy inflation, clouding the outlook for central banks and posing headwinds for stocks. It’s been a volatile month as traders have navigated headlines out of the Middle East and shifting foreca...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.6404,
+        "comparative": 0.14039999999999997
+      },
+      "topic": "Business",
+      "keywords": [
+        "outlook",
+        "worst",
+        "traders",
+        "markets",
+        "wall",
+        "prices",
+        "month",
+        "sp",
+        "oil",
+        "stocks",
+        "volatile",
+        "street",
+        "track"
+      ],
+      "entities": {
+        "persons": [],
+        "organizations": [
+          "Federal Reserve"
+        ],
+        "locations": [
+          "New York",
+          "Wall Street",
+          "Iran",
+          "Middle East",
+          "US"
+        ]
+      },
+      "ai_relevance": 0.7817
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Jordan Valinsky",
+      "title": "McCormick is merging with Unilever’s food business",
+      "description": "New York —Hellmann’s owner Unilever is spinning off its food business and merging it with spice maker McCormick to create a grocery staples behemoth.\nThe merger comes at a difficult time for food companies.\nCustomers are fickle, and Kraft Heinz has struggled to persuade customers to buy packaged food that customers no longer view as healthy.\nUnilever believes its food business is better off merging with a rival.\nThe two companies announced the deal Tuesday, with Unilever shareholders owning 55% of the company and McCormick shareholders owning 35%.",
+      "url": "https://edition.cnn.com/2026/03/31/food/mccormick-spices-is-merging-with",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1477551963.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-31T00:00:00",
+      "content": "New York —\n\nHellmann’s owner Unilever is spinning off its food business and merging it with spice maker McCormick to create a grocery staples behemoth.\n\nThe deal values the Uniliver brands at about $45 billion and McCormick at $21 billion.\n\nThe merger comes at a difficult time for food companies. Customers are fickle, and Kraft Heinz has struggled to persuade customers to buy packaged food that customers no longer view as healthy. Pepsi was forced to lower prices as consumers struggle with infla...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.861,
+        "comparative": 0.361
+      },
+      "topic": "Business",
+      "keywords": [
+        "deal",
+        "merging",
+        "business",
+        "shoppers",
+        "food",
+        "company",
+        "global",
+        "unilevers",
+        "customers",
+        "unilever",
+        "mccormick",
+        "companies"
+      ],
+      "entities": {
+        "persons": [],
+        "organizations": [
+          "Hellmann",
+          "Unilever",
+          "McCormick",
+          "Uniliver",
+          "Kraft Heinz",
+          "Pepsi",
+          "Kellogg"
+        ],
+        "locations": [
+          "New York"
+        ]
+      },
+      "ai_relevance": 0.5798
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Alicia Wallace",
+      "title": "What $4-a-gallon gasoline means for you and the economy",
+      "description": "The national average price for a gallon of regular unleaded gasoline has topped $4 for the first time since 2022.\nRegardless of the locale, no one’s really a fan of sharply rising gas prices.\nStill, the $4 national average serves as a notable threshold – one that carries psychological, mathematical and mechanical implications for the US economy.\nEconomic activityA $30 increase in oil prices equates to about a 0.3 percentage point knock on real GDP growth (which was 0.7% at the end of last year).\nOil futures are up $35 from their pre-war levels, which should roughly equate to a 84-cent gas price hike.",
+      "url": "https://edition.cnn.com/2026/03/23/economy/4-gallon-gas-economic-impact",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2026-03-19t200732z-609805624-rc2u7kaawer1-rtrmadp-3-iran-crisis-energy.JPG?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-23T00:00:00",
+      "content": "The national average price for a gallon of regular unleaded gasoline has topped $4 for the first time since 2022.\n\nThat price level is relative: A $4 gallon of gas would be welcome in California, Washington state or Hawaii, where the state averages run north of $5 per gallon; while residents of others states where the cost of living is lower are paying under $3.50 a gallon at the pump.\n\nRegardless of the locale, no one’s really a fan of sharply rising gas prices.\n\nStill, the $4 national average ...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.6847,
+        "comparative": 0.18469999999999998
+      },
+      "topic": "Business",
+      "keywords": [
+        "economy",
+        "gallon",
+        "point",
+        "prices",
+        "4agallon",
+        "means",
+        "gas",
+        "inflation",
+        "price",
+        "oil",
+        "rate",
+        "gasoline",
+        "brusuelas",
+        "percentage"
+      ],
+      "entities": {
+        "persons": [
+          "Diane Swonk",
+          "Joe Brusuelas"
+        ],
+        "organizations": [
+          "KPMG",
+          "RSM US"
+        ],
+        "locations": [
+          "California",
+          "Washington",
+          "Hawaii",
+          "US"
+        ]
+      },
+      "ai_relevance": 0.7561
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "David Goldman",
+      "title": "The market is sending a worrying signal about the economy",
+      "description": "Crude has surged above $110 a barrel, making $4-a-gallon gas and $5.40 diesel a painful reality in the United States.\n“That’s more problematic for the economy that you might think,” said Rob Haworth, senior investment strategy director at US Bank.\nThe big fearHigh gas prices represent a real burden for Americans.\nBut oil wouldn’t need to get to $200 a barrel by June to tip the US economy into a recession.\nHeather Long, chief economist at Navy Federal Credit Union, believes one more month of triple-digit oil prices could be enough.",
+      "url": "https://edition.cnn.com/2026/03/31/business/oil-prices-economy-market",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/ap26070641540252.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-31T00:00:00",
+      "content": "Good news: Oil traders are betting the Iran war will end fairly soon. Bad news: They’re also betting the economic damage from the war could last for years.\n\nCrude has surged above $110 a barrel, making $4-a-gallon gas and $5.40 diesel a painful reality in the United States.\n\nBut when we say “crude is trading above $110 a barrel,” that’s not the full story: Oil trades on a market where investors buy barrels of oil to be delivered sometime in the future – months or even years later. Right now, oil...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.5865,
+        "comparative": 0.08650000000000002
+      },
+      "topic": "Business",
+      "keywords": [
+        "thats",
+        "110",
+        "barrel",
+        "prewar",
+        "war",
+        "market",
+        "prices",
+        "production",
+        "gas",
+        "wont",
+        "oil",
+        "sending",
+        "worrying",
+        "signal",
+        "economy"
+      ],
+      "entities": {
+        "persons": [],
+        "organizations": [],
+        "locations": [
+          "Iran",
+          "United States"
+        ]
+      },
+      "ai_relevance": 0.4646
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "John Liu, Lisa Eadicicco",
+      "title": "Trump helped build the Middle East’s AI ambitions. Could his war break them?",
+      "description": "“The war is leaving data center investment up in the air,” said Ginger Matchett, a geostrategist at Washington-based think tank the Atlantic Council.\nFatemeh Bahrami/Anadolu/Getty ImagesOn top of training AI, data centers – made up of supercomputers running around the clock – underpin digital services and store vast amounts of data.\nFor now, Amazon has helped customers to migrate their workloads to data centers in other regions as disruptions persist.\nGiven the enormous electricity demands, energy has been the primary bottleneck for AI data center expansion – with power availability and cost largely determine where facilities are built.\nCNN has also reached out to Google and Oracle, which have also announced major AI investment in the region, for comment.",
+      "url": "https://edition.cnn.com/2026/03/30/tech/trump-iran-war-middle-east-ai-intl-hnk",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2214289106.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-30T00:00:00",
+      "content": "Hong Kong/New York —\n\nPresident Donald Trump arrived in the Middle East last spring, making deals that would vault the Gulf into the global race for artificial intelligence.\n\nAccompanied by an entourage of Big Tech CEOs during the trip from OpenAI’s Sam Altman to Amazon’s Andy Jassy, Trump hailed a region “forging a future where the Middle East is defined by commerce, not chaos” at an address in Riyadh.\n\nNine months later, the Iran conflict has led to drone and missile strikes on data centers in...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.7285,
+        "comparative": 0.22850000000000004
+      },
+      "topic": "Business",
+      "keywords": [
+        "ai",
+        "centers",
+        "region",
+        "data",
+        "center",
+        "war",
+        "helped",
+        "ambitions",
+        "investment",
+        "easts",
+        "amazon",
+        "tech",
+        "build",
+        "break",
+        "middle",
+        "trump",
+        "infrastructure"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Sam Altman",
+          "Andy Jassy",
+          "Trump"
+        ],
+        "organizations": [
+          "Big Tech",
+          "OpenAI",
+          "Amazon",
+          "Microsoft"
+        ],
+        "locations": [
+          "Hong Kong",
+          "New York",
+          "Middle East",
+          "Gulf",
+          "Amazon",
+          "Riyadh",
+          "Iran",
+          "UAE",
+          "Bahrain",
+          "Saudi Arabia"
+        ]
+      },
+      "ai_relevance": 0.6678
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Story The Associated Press",
+      "title": "Air Canada CEO will retire this year after his English-only crash message was criticized",
+      "description": "Toronto AP —Air Canada announced Monday that its CEO will retire later this year, after Michael Rousseau was criticized for his English-only message of condolence following this month’s deadly crash in New York.\nCanada is an officially bilingual nation, and Prime Minister Mark Carney said that Rousseau’s decision to retire is “appropriate.”“It is essential that the next CEO of Air Canada is bilingual,” Carney said.\n”I salute the decision of Air Canada CEO Michael Rousseau to step down from his position.\nThe Air Canada board of directors will have to ensure that the next CEO speaks French,” Quebec Premier François Legault said in a statement.\nForest and Mackenzie Gunther died when the Air Canada Jazz flight from Montreal collided with a fire truck on the runway shortly after landing.",
+      "url": "https://edition.cnn.com/2026/03/30/business/air-canada-ceo-english-french-crash-hnk",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/c-gettyimages-1236323759.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-30T00:00:00",
+      "content": "Toronto AP —\n\nAir Canada announced Monday that its CEO will retire later this year, after Michael Rousseau was criticized for his English-only message of condolence following this month’s deadly crash in New York.\n\nCanada’s largest airline, based in French-speaking Quebec, said that Rousseau, 68, told the board he will leave by the end of the third quarter.\n\nCanada is an officially bilingual nation, and Prime Minister Mark Carney said that Rousseau’s decision to retire is “appropriate.”\n\n“It is ...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.7418,
+        "comparative": 0.24180000000000001
+      },
+      "topic": "Business",
+      "keywords": [
+        "message",
+        "ceo",
+        "bilingual",
+        "criticized",
+        "canada",
+        "rousseau",
+        "quebec",
+        "air",
+        "englishonly",
+        "crash",
+        "minister",
+        "retire",
+        "airline",
+        "french"
+      ],
+      "entities": {
+        "persons": [
+          "Michael Rousseau",
+          "R",
+          "##ousseau",
+          "Mark Carney",
+          "Rousseau",
+          "Carney",
+          "François Legault",
+          "Antoine Forest"
+        ],
+        "organizations": [
+          "Toronto",
+          "AP",
+          "Air Canada"
+        ],
+        "locations": [
+          "New York",
+          "Canada",
+          "Quebec"
+        ]
+      },
+      "ai_relevance": 0.7958
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Hanna Ziady, John Towfighi",
+      "title": "US oil settles above $100 for first time since 2022 after Trump says he wants to ‘take the oil’ in Iran and Houthis join war",
+      "description": "Brent crude, the global oil benchmark, rose 0.19% to settle at $112.78 per barrel, paring gains after surpassing $116 per barrel earlier.\nUS crude oil settled above $100 per barrel as the war with Iran enters its fifth week.\nTraders continue to grapple with concerns that the conflict could carry on without a clear end in sight, creating prolonged disruptions in global oil markets.\nMeanwhile, the United States has sent thousands of troops to the Middle East over the past week, and Mohammad Bagher Ghalibaf, Iran’s parliamentary speaker, on Sunday accused the United States of “secretly planning a ground invasion” while touting negotiations.\nOil prices have surged more than 50% so far in March following the US-Israeli war against Iran.",
+      "url": "https://edition.cnn.com/2026/03/30/business/oil-prices-rise-116-iran-intl",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2026-03-12t203331z-446739296-rc2z0karsd02-rtrmadp-3-iran-crisis-oil-products.JPG?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-30T00:00:00",
+      "content": "London/New York —\n\nOil prices rose Monday, with US crude oil settling above $100 per barrel for the first time since July 2022, after comments by President Donald Trump and strikes against Israel by Iran-backed Houthi rebels deepened fears that the Middle East conflict may escalate further.\n\nWTI, the US benchmark, rose 3.25% to settle at $102.88, its highest closing level since July 2022. Brent crude, the global oil benchmark, rose 0.19% to settle at $112.78 per barrel, paring gains after surpas...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.7445,
+        "comparative": 0.24450000000000005
+      },
+      "topic": "Business",
+      "keywords": [
+        "wants",
+        "houthis",
+        "2022",
+        "barrel",
+        "war",
+        "join",
+        "end",
+        "states",
+        "100",
+        "settles",
+        "conflict",
+        "global",
+        "iran",
+        "oil",
+        "united",
+        "strait",
+        "trump"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Trump"
+        ],
+        "organizations": [
+          "WTI",
+          "Brent",
+          "Financial Times"
+        ],
+        "locations": [
+          "London",
+          "New York",
+          "US",
+          "Middle East",
+          "Iran",
+          "Kharg Island"
+        ]
+      },
+      "ai_relevance": 0.4945
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "David Goldman",
+      "title": "A recession is guaranteed. But when?",
+      "description": "The US economy is under strain, and the oil price shock could tip it over into recession.\nThat didn’t happen, but some economists predicted a recession by the end of the year (that also didn’t happen).\n20242025Trump’s historic tariffs sent markets into serious turmoil , and Wall Street banks raised their recession risks to about 50-50 in April.\n1) The “rolling recession” theory: Several individual sectors have gone into recession while other sectors have boomed at the same time.\nRobust spending from wealthier Americans balances out the financial difficulties of lower-income households, preventing the broader economy from entering a recession.",
+      "url": "https://edition.cnn.com/2026/03/30/economy/recession-economy-timing",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2266738809-20260326175556615.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-30T00:00:00",
+      "content": "The US economy is under strain, and the oil price shock could tip it over into recession.\n\n“People are preparing themselves for the fact that we are already in a recession now or that there is a high likelihood we will soon be in one,” said Hady Farag, a partner and associate director at Boston Consulting Group.\n\nThe problem: Timing a recession is extraordinarily hard. How do we know? That quote was from a CNN story in July 2022.\n\nThat’s when oil was last over $100 and gas prices averaged about ...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.6108,
+        "comparative": 0.11080000000000001
+      },
+      "topic": "Business",
+      "keywords": [
+        "theory",
+        "sectors",
+        "raised",
+        "recession",
+        "tariffs",
+        "market",
+        "prices",
+        "guaranteed",
+        "tech",
+        "oil",
+        "economy"
+      ],
+      "entities": {
+        "persons": [
+          "Had",
+          "##y Farag",
+          "Donald Trump",
+          "Dan Suzuki"
+        ],
+        "organizations": [
+          "Boston Consulting Group",
+          "CNN",
+          "Richard Bernstein Advisors"
+        ],
+        "locations": [
+          "US"
+        ]
+      },
+      "ai_relevance": 0.5139
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "John Towfighi",
+      "title": "3 graphics show how the war in Iran is roiling markets",
+      "description": "New York —The war in Iran has jolted financial markets, sending oil prices surging and stocks and bonds falling.\nHere’s a look at how the Middle East conflict has impacted markets this month:OilOil prices have surged since the war began.\nStocksThe Dow and S&P 500 are each set for their worst month since September 2022.\nThat’s a shift from the start of the year, when markets were pricing in two Fed rate cuts this year.\n“We’re seeing markets begin to question whether there will not only not be cuts, but may in fact be hikes,” Tipp said.",
+      "url": "https://edition.cnn.com/2026/03/30/business/us-stocks-oil-iran",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2266129240.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-30T00:00:00",
+      "content": "New York —\n\nThe war in Iran has jolted financial markets, sending oil prices surging and stocks and bonds falling.\n\nThe market gyrations can be dizzying. Here’s a look at how the Middle East conflict has impacted markets this month:\n\nOil\n\nOil prices have surged since the war began.\n\nOil has climbed due to the effective closure of the Strait of Hormuz, disruptions to oil facilities in the Middle East and uncertainty about the duration of the conflict.\n\nBrent crude, the global benchmark, rose 4.22...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.5628,
+        "comparative": 0.06279999999999997
+      },
+      "topic": "Business",
+      "keywords": [
+        "roiling",
+        "worst",
+        "war",
+        "markets",
+        "prices",
+        "bonds",
+        "month",
+        "iran",
+        "graphics",
+        "sp",
+        "tipp",
+        "set",
+        "cuts"
+      ],
+      "entities": {
+        "persons": [],
+        "organizations": [
+          "Brent"
+        ],
+        "locations": [
+          "New York",
+          "Iran",
+          "Middle East",
+          "Strait of Hormuz",
+          "United States",
+          "Israel"
+        ]
+      },
+      "ai_relevance": 0.679
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Auzinea Bacon",
+      "title": "Oil prices climb after Iran warns against US ground invasion",
+      "description": "Oil prices climbed Sunday after Tehran warned against a US ground invasion, despite President Donald Trump saying on Friday that negotiations would continue to end the war.\nStrikes targeting oil and gas facilities have also triggered higher gas prices.\nSmaller nations will be hit hardest — including countries in Asia — but rising oil prices will have a rippling effect across the global economy, Bob McNally, president of Rapidan Energy, told CNN on Sunday.\nIn a worst-case scenario, surging oil prices could be ended by a recession, he added.\nThose gas prices will take time to fall once the war ends, experts warn.",
+      "url": "https://edition.cnn.com/2026/03/29/business/oil-prices-iran-war",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2267815419.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-29T00:00:00",
+      "content": "Oil prices climbed Sunday after Tehran warned against a US ground invasion, despite President Donald Trump saying on Friday that negotiations would continue to end the war.\n\nBrent crude, the global benchmark, rose 2.47% to $107.92, while US crude rose 2.94% to $102.57.\n\nIran’s parliament speaker on Sunday said the country’s forces are “waiting” for American troops. The warning came after Trump on Friday said “talks are ongoing” and extended the deadline for his ultimatum calling on Iran to reope...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.7388,
+        "comparative": 0.2388
+      },
+      "topic": "Business",
+      "keywords": [
+        "war",
+        "way",
+        "warns",
+        "prices",
+        "futures",
+        "climb",
+        "gas",
+        "iran",
+        "global",
+        "oil",
+        "ground",
+        "strait",
+        "invasion",
+        "trump"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Trump",
+          "Is",
+          "##ha",
+          "##q Dar"
+        ],
+        "organizations": [
+          "Brent"
+        ],
+        "locations": [
+          "Tehran",
+          "US",
+          "Iran",
+          "Strait of Hormuz",
+          "Yemen",
+          "Israel",
+          "Ba",
+          "##b al - Mandab Strait",
+          "Red Sea",
+          "Pakistan",
+          "Saudi Arabia",
+          "Egypt",
+          "Turkey"
+        ]
+      },
+      "ai_relevance": 0.5622
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Clare Duffy",
+      "title": "‘Now we have the proof’: Safety advocates hope a landmark jury ruling could lead to social media changes",
+      "description": "New York —Online safety advocates hope landmark trial verdicts this week can bring change to social media platforms they have warned about for years, after juries found Meta (and YouTube in one case) responsible for harms to kids and teens.\nHere’s what more online safety advocates would like to see the social media platforms change.\n“I think that there is a way to design social media that is so different from anything that we’re all experiencing now,” said Sarah Gardner, founder and CEO of the advocacy organization Heat Initiative.\nJulianna Arnold and Lori Schott, who say their daughters died because of social media, speak outside the courthouse after a jury found Meta and Google liable in a landmark social media addiction case.\nSome advocates would like to see American lawmakers follow Australia’s lead in restricting access to social media for kids under the age of 16, although others say age verification raises privacy concerns.",
+      "url": "https://edition.cnn.com/2026/03/28/tech/social-media-verdict-advocates-hope-for-changes",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/c-2026-03-25t205813z-693285307-rc2wbka3h9lw-rtrmadp-3-socialmedia-trial.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-28T00:00:00",
+      "content": "New York —\n\nOnline safety advocates hope landmark trial verdicts this week can bring change to social media platforms they have warned about for years, after juries found Meta (and YouTube in one case) responsible for harms to kids and teens.\n\n“We’ve been telling our stories forever and people say, ‘Oh, that’s horrible,’ but we haven’t seen any action,” Julianna Arnold told CNN’s Elex Michaelson on Thursday. Arnold founded the advocacy organization Parents RISE! following the death of her daught...",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.6976,
+        "comparative": 0.1976
+      },
+      "topic": "Business",
+      "keywords": [
+        "hope",
+        "users",
+        "platforms",
+        "jury",
+        "safety",
+        "proof",
+        "meta",
+        "case",
+        "changes",
+        "youtube",
+        "kids",
+        "ruling",
+        "lead",
+        "social",
+        "parents",
+        "media",
+        "landmark"
+      ],
+      "entities": {
+        "persons": [
+          "Julian",
+          "##na Arnold",
+          "Elex Michaels",
+          "Arnold",
+          "Co",
+          "##co"
+        ],
+        "organizations": [
+          "Met",
+          "YouTube",
+          "CNN",
+          "Parents RISE!",
+          "In",
+          "##gram",
+          "Meta"
+        ],
+        "locations": [
+          "New York",
+          "New Mexico",
+          "California"
+        ]
+      },
+      "ai_relevance": 0.451
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Alicia Wallace",
+      "title": "America’s frozen jobs market could stay on ice due to Iran war",
+      "description": "Now, a war thousands of miles away not only interrupts that potential progress, but also threatens to knock the labor market further off course.\nThat’s a dynamic that strangled the labor market.\nUS average gas prices are up $1 to $3.98 per gallon from their pre-war averages, AAA data shows.\nConsumer spending accounts for two-thirds of economic activity, so if that drops off, that could spell trouble for the US labor market.\nBatches of new labor market data – including the latest on turnover, private-sector hiring, layoff announcements, and the crucial monthly jobs report – are due out this week.",
+      "url": "https://edition.cnn.com/2026/03/29/economy/us-job-market-thaw-middle-east-war",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2260443063.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-29T00:00:00",
+      "content": "US job growth was lackluster last year, but signs of stabilization, if not a rebound, were starting to emerge.\n\nNow, a war thousands of miles away not only interrupts that potential progress, but also threatens to knock the labor market further off course.\n\nIt’s been four weeks since the US and Israel launched strikes against Iran. The economic ripple effects of the escalating and deadly Middle East conflict have been swift: A choked-off critical shipping passageway has caused oil prices to shoo...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.5329,
+        "comparative": 0.03290000000000004
+      },
+      "topic": "Business",
+      "keywords": [
+        "stay",
+        "ice",
+        "data",
+        "war",
+        "frozen",
+        "economic",
+        "market",
+        "jobs",
+        "prices",
+        "gas",
+        "iran",
+        "higher",
+        "spending",
+        "hiring",
+        "americas",
+        "economy",
+        "labor"
+      ],
+      "entities": {
+        "persons": [
+          "Heather Long"
+        ],
+        "organizations": [],
+        "locations": [
+          "US",
+          "Israel",
+          "Iran",
+          "Middle East",
+          "Strait of Hormuz"
+        ]
+      },
+      "ai_relevance": 0.6012
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "John Towfighi",
+      "title": "Dow closes in correction, S&P logs longest weekly losing streak in four years and oil settles at Iran-war highs",
+      "description": "The Dow, S&P 500 and Nasdaq each closed at their lowest level since August.\nThe S&P 500 dropped 3.4% across two days, suffering its worst two-day drop since April, when markets were rocked by uncertainty about tariffs.\nThe key factor is rising oil prices, which settled on Friday at their highest level since the war began.\n“The stock market is still highly correlated to oil prices, so as oil prices move higher, stocks are moving lower,” Glen Smith, chief investment officer at GDS Wealth Management, said in a note.\nThe Dow and S&P 500 have dropped for five weeks in a row, posting their worst streak of consecutive weekly losses in almost four years.",
+      "url": "https://edition.cnn.com/2026/03/27/investing/us-stocks-iran",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2267701359.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-27T00:00:00",
+      "content": "New York —\n\nUS stocks slid and the Dow closed in correction Friday as uncertainty about the duration of the war with Iran and nerves about energy inflation continued to weigh on markets.\n\nThe Dow fell 793 points, or 1.73%, and closed at 45,167, down 10% from its peak above 50,000 in February.\n\nThe S&P 500 fell 1.67% and the Nasdaq declined by 2.15%. The Dow, S&P 500 and Nasdaq each closed at their lowest level since August.\n\nThe Nasdaq extended losses after closing in correction territory Thursd...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.611,
+        "comparative": 0.11099999999999999
+      },
+      "topic": "Business",
+      "keywords": [
+        "weekly",
+        "iranwar",
+        "level",
+        "war",
+        "streak",
+        "investors",
+        "prices",
+        "settles",
+        "longest",
+        "highs",
+        "sp",
+        "nasdaq",
+        "iran",
+        "oil",
+        "losing",
+        "logs",
+        "500",
+        "dow"
+      ],
+      "entities": {
+        "persons": [],
+        "organizations": [
+          "S & P"
+        ],
+        "locations": [
+          "New York",
+          "US",
+          "Iran"
+        ]
+      },
+      "ai_relevance": 0.673
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Bryan Mena",
+      "title": "Even wealthy Americans are souring on the economy as gas prices spike and stocks fall",
+      "description": "Washington —Americans are growing more pessimistic about the US economy as the war on Iran continues to roil markets, with sentiment falling across all income groups — including the wealthiest.\nGas prices across America have already surged since the onset of the conflict.\nLong-run inflation expectations serve as a proxy for Americans’ confidence in the Fed’s ability to rein in price increases.\nWhat souring sentiment means for the economyDeclining consumer sentiment has not translated to weaker spending in recent years.\nIf the Iran war drags on for months, the outlook could quickly darken, setting off a downward economic spiral as falling stocks give way to weaker spending and, ultimately, a recession.",
+      "url": "https://edition.cnn.com/2026/03/27/economy/us-consumer-sentiment-march-iran-war",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2264401435-20260327151157947.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-27T00:00:00",
+      "content": "Washington —\n\nAmericans are growing more pessimistic about the US economy as the war on Iran continues to roil markets, with sentiment falling across all income groups — including the wealthiest.\n\nConsumer sentiment declined 6% this month to a final reading of 53.3, the University of Michigan said Friday, a steeper drop than the one reported earlier this month, when the war had just started. Sentiment is now at its lowest point since December. Friday’s level was lower than the 54.2 reading that ...",
+      "sentiment": {
+        "type": "negative",
+        "score": 0.5618,
+        "comparative": 0.061799999999999966
+      },
+      "topic": "Business",
+      "keywords": [
+        "war",
+        "sentiment",
+        "prices",
+        "fall",
+        "gas",
+        "souring",
+        "inflation",
+        "spending",
+        "month",
+        "iran",
+        "stocks",
+        "higher",
+        "wealthy",
+        "americans",
+        "economy",
+        "spike"
+      ],
+      "entities": {
+        "persons": [
+          "Donald Trump",
+          "Joanne Hsu"
+        ],
+        "organizations": [
+          "University of Michigan",
+          "FactSet"
+        ],
+        "locations": [
+          "Washington",
+          "US",
+          "Iran",
+          "Middle East"
+        ]
+      },
+      "ai_relevance": 0.7291
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Clare Duffy, Auzinea Bacon",
+      "title": "Elon Musk misled Twitter shareholders ahead of acquisition in 2022, jury finds",
+      "description": "New York —A California jury on Friday largely sided with Twitter shareholders who accused billionaire Elon Musk of making false statements and intentionally driving down the social media company’s stock ahead of his $44 billion acquisition in 2022.\nThe decision resolves a civil class action lawsuit filed by a group of Twitter shareholders against Musk in October 2022 — weeks before he took control of the company.\nMusk first agreed to buy Twitter, now known as X, in April 2022, but then spent months fighting to get out of the purchase before ultimately completing the acquisition.\nMusk’s legal team had sought to dismiss the case, denying that Musk’s statements were false and arguing that plaintiffs’ “defective” claim did not adequately connect his statements to shareholders’ losses.\nThe Twitter shareholders behind the class action were not the only ones to raise concerns about Musk’s representations related to the acquisition.",
+      "url": "https://edition.cnn.com/2026/03/20/business/elon-musk-jury-twitter-fraud",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/221031172749-elon-musk-twitter-102622.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2026-03-20T00:00:00",
+      "content": "New York —\n\nA California jury on Friday largely sided with Twitter shareholders who accused billionaire Elon Musk of making false statements and intentionally driving down the social media company’s stock ahead of his $44 billion acquisition in 2022. But they absolved Musk of claims of engaging in a “scheme” to defraud investors.\n\nThe decision resolves a civil class action lawsuit filed by a group of Twitter shareholders against Musk in October 2022 — weeks before he took control of the company....",
+      "sentiment": {
+        "type": "neutral",
+        "score": 0.694,
+        "comparative": 0.19399999999999995
+      },
+      "topic": "Business",
+      "keywords": [
+        "acquisition",
+        "deal",
+        "misled",
+        "ahead",
+        "2022",
+        "musks",
+        "jury",
+        "finds",
+        "shareholders",
+        "twitter",
+        "elon",
+        "statements",
+        "musk",
+        "stock",
+        "plaintiffs"
+      ],
+      "entities": {
+        "persons": [
+          "##on Musk",
+          "Mu",
+          "##sk",
+          "Musk"
+        ],
+        "organizations": [
+          "Twitter",
+          "El",
+          "##sk",
+          "X"
+        ],
+        "locations": [
+          "New York",
+          "California",
+          "San Francisco"
+        ]
+      },
+      "ai_relevance": 0.4891
+    }
+  ],
+  "scrapedAt": "2026-03-31T14:09:15.809526",
+  "aiModels": {
+    "sentiment": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+    "zeroShot": "facebook/bart-large-mnli",
+    "ner": "dslim/bert-base-NER"
+  }
+}

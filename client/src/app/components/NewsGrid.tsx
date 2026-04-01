@@ -6,7 +6,6 @@ import { newsAPI, NewsArticle } from '../services/newsAPI';
 import { NewsCard } from './NewsCard';
 
 const PER_PAGE = 9;
-const MAX_INFINITE = 9; // Show first 9 with load more (simulating infinite scroll limit)
 
 export function NewsGrid() {
   const { t, isDark, selectedCategory, searchQuery } = useApp();
@@ -18,16 +17,14 @@ export function NewsGrid() {
   const [visibleCount, setVisibleCount] = useState(9);
   const [showPagination, setShowPagination] = useState(false);
 
-  const PER_PAGE = 9;
-
   // Fetch articles based on category
   useEffect(() => {
     const fetchNews = async () => {
       setLoading(true);
       setError(null);
       try {
-        const category = selectedCategory !== 'all' ? selectedCategory : 'general';
-        const response = await newsAPI.getTopHeadlines(category, 80, page);
+        const category = selectedCategory === 'all' ? 'all' : selectedCategory;
+        const response = await newsAPI.getTopHeadlines(category, 200, 1);
 
         if (response.success && response.data?.articles) {
           let filtered = response.data.articles;
@@ -39,15 +36,17 @@ export function NewsGrid() {
               a =>
                 a.title.toLowerCase().includes(query) ||
                 (a.description?.toLowerCase().includes(query) || false) ||
-                a.source.name.toLowerCase().includes(query)
+                a.source.name.toLowerCase().includes(query) ||
+                a.topic.toLowerCase().includes(query) ||
+                a.sentiment.type.toLowerCase().includes(query)
             );
           }
 
           setArticles(filtered);
-          setTotalPages(Math.ceil(filtered.length / PER_PAGE));
+          setTotalPages(Math.max(1, Math.ceil(filtered.length / PER_PAGE)));
+          setPage(1);
           setVisibleCount(PER_PAGE);
           setShowPagination(false);
-          setPage(1);
         } else {
           setError(response.message || 'Failed to fetch news');
         }
@@ -66,11 +65,11 @@ export function NewsGrid() {
     ? articles.slice((page - 1) * PER_PAGE, page * PER_PAGE)
     : articles.slice(0, visibleCount);
 
-  const canLoadMore = !showPagination && visibleCount < Math.min(articles.length, 60);
+  const canLoadMore = !showPagination && visibleCount < articles.length;
 
   const handleLoadMore = () => {
     const next = visibleCount + PER_PAGE;
-    if (next >= 60 || next >= articles.length) {
+    if (next >= articles.length) {
       setShowPagination(true);
       setPage(1);
     } else {

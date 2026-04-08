@@ -1,23 +1,19 @@
 import { Link } from 'react-router';
 import { motion } from 'motion/react';
 import { useApp } from '../contexts/AppContext';
-import { NewsArticle } from '../services/newsAPI';
+import { getArticleId, NewsArticle, SentimentType } from '../services/newsAPI';
 import { ImageWithFallback } from './utils/ImageWithFallback';
 
-const SENTIMENT_STYLE = {
+const SENTIMENT_STYLE: Record<SentimentType, { bg: string; dot: string; dark: string }> = {
   positive: { bg: 'bg-emerald-100 text-emerald-700', dot: 'bg-emerald-500', dark: 'bg-emerald-900/40 text-emerald-300' },
   neutral: { bg: 'bg-gray-100 text-gray-600', dot: 'bg-gray-400', dark: 'bg-gray-700 text-gray-300' },
   negative: { bg: 'bg-red-100 text-red-700', dot: 'bg-red-500', dark: 'bg-red-900/40 text-red-300' },
 };
 
-const CATEGORY_COLORS: Record<string, string> = {
-  technology: 'bg-cyan-500',
-  business: 'bg-blue-500',
-  science: 'bg-violet-500',
-  health: 'bg-emerald-500',
-  entertainment: 'bg-pink-500',
-  sports: 'bg-orange-500',
-  general: 'bg-gray-500',
+const CATEGORY_COLORS: Record<NewsArticle['topic'], string> = {
+  Politics: 'bg-sky-600',
+  Sport: 'bg-orange-500',
+  Business: 'bg-indigo-600',
 };
 
 interface NewsCardProps {
@@ -27,16 +23,11 @@ interface NewsCardProps {
 
 export function NewsCard({ article, index }: NewsCardProps) {
   const { t, isDark } = useApp();
+  const articleId = getArticleId(article);
 
-  // Generate a simple ID from the URL for linking
-  const articleId = encodeURIComponent(article.url || article.title);
-
-  // Default to neutral sentiment
-  const sentiment = 'neutral' as const;
+  const sentiment = article.sentiment?.type ?? 'neutral';
   const sentStyle = SENTIMENT_STYLE[sentiment];
-
-  // Default to general category
-  const category = 'general';
+  const category = article.topic;
 
   return (
     <motion.div
@@ -58,7 +49,7 @@ export function NewsCard({ article, index }: NewsCardProps) {
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             {/* Category badge */}
             <div className={`absolute top-3 left-3 ${CATEGORY_COLORS[category]} text-white text-xs px-2.5 py-1 rounded-full font-semibold uppercase tracking-wider`}>
-              {t[category as keyof typeof t] as string}
+              {category}
             </div>
           </div>
 
@@ -75,7 +66,7 @@ export function NewsCard({ article, index }: NewsCardProps) {
             <div className="flex items-center gap-2 mb-3">
               <span className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold ${isDark ? sentStyle.dark : sentStyle.bg}`}>
                 <span className={`w-1.5 h-1.5 rounded-full ${sentStyle.dot}`} />
-                {t[sentiment]}
+                {article.sentiment.type}
               </span>
             </div>
 

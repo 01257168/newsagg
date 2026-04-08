@@ -3,10 +3,10 @@ import { Link } from 'react-router';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight, TrendingUp } from 'lucide-react';
 import { useApp } from '../contexts/AppContext';
-import { newsAPI, NewsArticle } from '../services/newsAPI';
+import { getArticleId, newsAPI, NewsArticle, SentimentType } from '../services/newsAPI';
 
 interface SentimentBadgeProps {
-  sentiment: string;
+  sentiment: SentimentType;
 }
 
 function SentimentBadge({ sentiment }: SentimentBadgeProps) {
@@ -39,7 +39,7 @@ export function HeroCarousel({ scrollY }: HeroCarouselProps) {
   useEffect(() => {
     const fetchHeadlines = async () => {
       try {
-        const response = await newsAPI.getTopHeadlines('general', 5);
+        const response = await newsAPI.getTopHeadlines('all', 5);
         if (response.success && response.data?.articles) {
           setHeadlines(response.data.articles.slice(0, 5));
         }
@@ -125,9 +125,10 @@ export function HeroCarousel({ scrollY }: HeroCarouselProps) {
           className="absolute bottom-0 left-0 right-0 p-6 z-10"
         >
           {!isCompact ? (
-            <Link to={`/article/${encodeURIComponent(article.url)}`} className="block group">
+            <Link to={`/article/${getArticleId(article)}`} className="block group">
               <div className="flex items-center gap-2 mb-2">
-                <SentimentBadge sentiment="neutral" />
+                <SentimentBadge sentiment={article.sentiment.type} />
+                <span className="text-white/75 text-xs font-semibold">{article.topic}</span>
                 <span className="text-white/70 text-xs">{article.source.name}</span>
               </div>
               <h2 className="text-white text-2xl md:text-3xl font-bold leading-tight mb-2 group-hover:text-cyan-300 transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>
@@ -142,9 +143,9 @@ export function HeroCarousel({ scrollY }: HeroCarouselProps) {
               </div>
             </Link>
           ) : (
-            <Link to={`/article/${encodeURIComponent(article.url)}`} className="flex items-center gap-3 group">
+            <Link to={`/article/${getArticleId(article)}`} className="flex items-center gap-3 group">
               <div className="flex items-center gap-2 min-w-0">
-                <SentimentBadge sentiment="neutral" />
+                <SentimentBadge sentiment={article.sentiment.type} />
                 <span className="text-white font-semibold text-sm truncate group-hover:text-cyan-300 transition-colors">{article.title}</span>
               </div>
               <span className="text-white/60 text-xs flex-shrink-0">{article.source.name}</span>

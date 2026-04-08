@@ -1,12 +1,14 @@
 export const CATEGORIES = [
-  'technology',
+  'politics',
+  'sport',
   'business',
-  'science',
-  'health',
-  'entertainment',
-  'sports',
-  'general',
 ] as const;
+
+export const CATEGORY_LABELS: Record<(typeof CATEGORIES)[number], string> = {
+  politics: 'Politics',
+  sport: 'Sport',
+  business: 'Business',
+};
 
 export const COUNTRIES = [
   { code: 'us', name: 'United States' },

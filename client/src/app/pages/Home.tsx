@@ -26,6 +26,10 @@ export function Home() {
         {/* News Grid */}
         <div className="flex-1 min-w-0">
           <NewsGrid />
+
+          <div className="mt-6 lg:hidden">
+            <SentimentPanel />
+          </div>
         </div>
 
         {/* Sentiment Panel - right sticky sidebar */}

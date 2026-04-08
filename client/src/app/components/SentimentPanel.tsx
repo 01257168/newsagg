@@ -1,14 +1,22 @@
-import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';
+import { useEffect, useMemo, useState } from 'react';
+import { Link } from 'react-router';
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { useApp } from '../contexts/AppContext';
-import { TrendingUp, Activity, Users } from 'lucide-react';
+import { Activity, Clock3, TrendingUp, Users } from 'lucide-react';
+import {
+  getArticleId,
+  getLatestArticles,
+  getLiveEngagement,
+  getSentimentDistribution,
+  getTrendingKeywords,
+  SentimentType,
+} from '../services/newsAPI';
 
 const SENTIMENT_COLORS = {
   positive: '#10b981',
   neutral: '#6b7280',
   negative: '#ef4444',
 };
-
-const TOPIC_COLORS = ['#06b6d4', '#8b5cf6', '#f59e0b', '#10b981', '#ef4444', '#3b82f6', '#ec4899'];
 
 const CustomTooltip = ({ active, payload, isDark }: any) => {
   if (active && payload && payload.length) {
@@ -22,37 +30,79 @@ const CustomTooltip = ({ active, payload, isDark }: any) => {
   return null;
 };
 
+const formatRelativeTime = (value: string): string => {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+
+  const now = Date.now();
+  const diffMinutes = Math.round((now - date.getTime()) / (1000 * 60));
+
+  if (diffMinutes <= 1) {
+    return 'just now';
+  }
+  if (diffMinutes < 60) {
+    return `${diffMinutes}m ago`;
+  }
+
+  const diffHours = Math.round(diffMinutes / 60);
+  if (diffHours < 24) {
+    return `${diffHours}h ago`;
+  }
+
+  const diffDays = Math.round(diffHours / 24);
+  return `${diffDays}d ago`;
+};
+
+const formatCount = (value: number): string => {
+  if (value >= 1_000_000) {
+    return `${(value / 1_000_000).toFixed(1)}M`;
+  }
+  if (value >= 1_000) {
+    return `${(value / 1_000).toFixed(1)}K`;
+  }
+  return String(value);
+};
+
+const sentimentTextClass: Record<SentimentType, string> = {
+  positive: 'text-emerald-500',
+  neutral: 'text-gray-500',
+  negative: 'text-red-500',
+};
+
+const sentimentPillClass: Record<SentimentType, string> = {
+  positive: 'bg-emerald-100 text-emerald-700',
+  neutral: 'bg-gray-100 text-gray-700',
+  negative: 'bg-red-100 text-red-700',
+};
+
 export function SentimentPanel() {
   const { t, isDark } = useApp();
+  const [tick, setTick] = useState(Date.now());
 
-  // Using aggregated sentiment data - in a real app, this would come from your analytics backend
-  const sentimentData = [
-    { name: t.positive, value: 45, color: SENTIMENT_COLORS.positive },
-    { name: t.neutral, value: 35, color: SENTIMENT_COLORS.neutral },
-    { name: t.negative, value: 20, color: SENTIMENT_COLORS.negative },
-  ];
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setTick(Date.now());
+    }, 12_000);
 
-  const trendingTopics = [
-    { topic: 'AI', count: 42, color: TOPIC_COLORS[0] },
-    { topic: 'Tesla', count: 35, color: TOPIC_COLORS[1] },
-    { topic: 'Bitcoin', count: 28, color: TOPIC_COLORS[2] },
-    { topic: 'NASA', count: 24, color: TOPIC_COLORS[3] },
-    { topic: 'Cybersecurity', count: 19, color: TOPIC_COLORS[4] },
-    { topic: 'iCloud', count: 15, color: TOPIC_COLORS[5] },
-    { topic: 'Quantum', count: 12, color: TOPIC_COLORS[6] },
-  ];
+    return () => window.clearInterval(intervalId);
+  }, []);
 
-  const engagementData = [
-    { name: 'Mon', views: 1200, comments: 85 },
-    { name: 'Tue', views: 1900, comments: 120 },
-    { name: 'Wed', views: 1400, comments: 95 },
-    { name: 'Thu', views: 2200, comments: 160 },
-    { name: 'Fri', views: 1800, comments: 130 },
-    { name: 'Sat', views: 2800, comments: 200 },
-    { name: 'Sun', views: 3100, comments: 240 },
-  ];
+  const sentimentDistribution = useMemo(() => getSentimentDistribution(), []);
+  const liveArticles = useMemo(() => getLatestArticles(6), []);
+  const trendingKeywords = useMemo(() => getTrendingKeywords(10), []);
+  const liveEngagement = useMemo(() => getLiveEngagement(tick, 6), [tick]);
+
+  const sentimentData = sentimentDistribution.map((item) => ({
+    name: t[item.type],
+    value: item.count,
+    color: SENTIMENT_COLORS[item.type],
+    type: item.type,
+  }));
 
   const total = sentimentData.reduce((s, d) => s + d.value, 0);
+  const maxKeywordCount = Math.max(1, ...trendingKeywords.map((item) => item.count));
   const textColor = isDark ? '#e2e8f0' : '#374151';
   const mutedColor = isDark ? '#64748b' : '#9ca3af';
 
@@ -99,11 +149,44 @@ export function SentimentPanel() {
                 <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ background: d.color }} />
                 <span className="text-xs flex-1 truncate" style={{ color: textColor }}>{d.name}</span>
                 <span className="text-xs font-semibold" style={{ color: d.color }}>
-                  {Math.round(d.value / total * 100)}%
+                  {d.value} ({total > 0 ? Math.round((d.value / total) * 100) : 0}%)
                 </span>
               </div>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* Live View */}
+      <div className={`rounded-2xl border shadow-lg p-4 ${panelBase}`}>
+        <div className="flex items-center gap-2 mb-3">
+          <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center">
+            <Clock3 size={13} className="text-white" />
+          </div>
+          <h3 className={`text-sm font-semibold ${isDark ? 'text-slate-200' : 'text-gray-800'}`} style={{ fontFamily: 'Poppins, sans-serif' }}>
+            Live View
+          </h3>
+        </div>
+
+        <div className="space-y-2.5">
+          {liveArticles.map((article) => (
+            <Link
+              key={article.url}
+              to={`/article/${getArticleId(article)}`}
+              className={`block rounded-xl p-2.5 transition-colors ${isDark ? 'hover:bg-slate-700/60' : 'hover:bg-gray-50'}`}
+            >
+              <p className={`text-sm font-medium line-clamp-2 ${isDark ? 'text-slate-100' : 'text-gray-900'}`}>
+                {article.title}
+              </p>
+              <div className="flex items-center gap-2 mt-1.5 text-xs flex-wrap">
+                <span style={{ color: mutedColor }}>{formatRelativeTime(article.publishedAt)}</span>
+                <span className={`${isDark ? 'text-slate-400' : 'text-gray-500'}`}>•</span>
+                <span style={{ color: textColor }}>{article.topic}</span>
+                <span className={`${isDark ? 'text-slate-400' : 'text-gray-500'}`}>•</span>
+                <span className={sentimentTextClass[article.sentiment.type]}>{article.sentiment.type}</span>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
 
@@ -119,18 +202,21 @@ export function SentimentPanel() {
         </div>
 
         <div className="space-y-2">
-          {trendingTopics.map((topic, i) => (
-            <div key={topic.topic} className="flex items-center gap-2">
+          {trendingKeywords.map((topic, i) => (
+            <div key={topic.keyword} className="flex items-center gap-2">
               <span className="text-xs font-bold w-4" style={{ color: mutedColor }}>{i + 1}</span>
               <div className="flex-1">
                 <div className="flex items-center justify-between mb-0.5">
-                  <span className="text-xs font-medium" style={{ color: textColor }}>{topic.topic}</span>
-                  <span className="text-xs" style={{ color: mutedColor }}>{topic.count}k</span>
+                  <span className="text-xs font-medium" style={{ color: textColor }}>{topic.keyword}</span>
+                  <span className="text-xs" style={{ color: mutedColor }}>{topic.count}</span>
                 </div>
                 <div className={`h-1.5 rounded-full overflow-hidden ${isDark ? 'bg-slate-700' : 'bg-gray-100'}`}>
                   <div
                     className="h-full rounded-full transition-all duration-500"
-                    style={{ width: `${(topic.count / 42) * 100}%`, background: topic.color }}
+                    style={{
+                      width: `${(topic.count / maxKeywordCount) * 100}%`,
+                      background: '#06b6d4',
+                    }}
                   />
                 </div>
               </div>
@@ -139,57 +225,60 @@ export function SentimentPanel() {
         </div>
       </div>
 
-      {/* Audience Engagement */}
+      {/* Live Engagement */}
       <div className={`rounded-2xl border shadow-lg p-4 ${panelBase}`}>
         <div className="flex items-center gap-2 mb-3">
           <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center">
             <Users size={13} className="text-white" />
           </div>
           <h3 className={`text-sm font-semibold ${isDark ? 'text-slate-200' : 'text-gray-800'}`} style={{ fontFamily: 'Poppins, sans-serif' }}>
-            {t.audienceEngagement}
+            Live Engagement
           </h3>
         </div>
 
-        <ResponsiveContainer width="100%" height={120}>
-          <BarChart data={engagementData} margin={{ top: 0, right: 0, left: -20, bottom: 0 }}>
-            <XAxis dataKey="name" tick={{ fill: mutedColor, fontSize: 10 }} axisLine={false} tickLine={false} />
-            <YAxis tick={{ fill: mutedColor, fontSize: 10 }} axisLine={false} tickLine={false} />
-            <Tooltip content={<CustomTooltip isDark={isDark} />} />
-            <Bar dataKey="views" fill="#06b6d4" radius={[3, 3, 0, 0]} name="Views" />
-            <Bar dataKey="comments" fill="#8b5cf6" radius={[3, 3, 0, 0]} name="Comments" />
-          </BarChart>
-        </ResponsiveContainer>
+        <div className="space-y-2.5">
+          {liveEngagement.map((item) => (
+            <div key={item.articleId} className={`rounded-xl p-2.5 ${isDark ? 'bg-slate-700/50' : 'bg-gray-50/90'}`}>
+              <p className={`text-sm font-medium line-clamp-1 ${isDark ? 'text-slate-100' : 'text-gray-900'}`}>{item.title}</p>
+              <div className="flex items-center gap-2 mt-1 text-[11px] flex-wrap">
+                <span style={{ color: mutedColor }}>{item.topic}</span>
+                <span className={`${isDark ? 'text-slate-400' : 'text-gray-500'}`}>•</span>
+                <span className={`${sentimentPillClass[item.sentiment]} px-2 py-0.5 rounded-full`}>{item.sentiment}</span>
+              </div>
+              <div className="grid grid-cols-3 gap-2 mt-2 text-xs">
+                <div>
+                  <p style={{ color: mutedColor }}>Views</p>
+                  <p className="font-semibold" style={{ color: textColor }}>{formatCount(item.views)}</p>
+                </div>
+                <div>
+                  <p style={{ color: mutedColor }}>Likes</p>
+                  <p className="font-semibold" style={{ color: textColor }}>{formatCount(item.likes)}</p>
+                </div>
+                <div>
+                  <p style={{ color: mutedColor }}>Interactions</p>
+                  <p className="font-semibold" style={{ color: textColor }}>{formatCount(item.interactions)}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
 
-        <div className="flex items-center gap-4 mt-1">
-          <div className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-sm bg-cyan-500" />
-            <span className="text-xs" style={{ color: mutedColor }}>Views</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-sm bg-violet-500" />
-            <span className="text-xs" style={{ color: mutedColor }}>Comments</span>
-          </div>
+        <div className="flex items-center gap-2 mt-3">
+          <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
+          <span className="text-xs" style={{ color: mutedColor }}>Updates every 12 seconds</span>
         </div>
       </div>
 
-      {/* Live Stats */}
       <div className={`rounded-2xl border shadow-lg p-4 ${panelBase}`}>
-        <div className="flex items-center gap-2 mb-1">
-          <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-          <span className="text-xs font-semibold text-emerald-400">LIVE</span>
-        </div>
-        <div className="grid grid-cols-2 gap-3 mt-2">
-          {[
-            { label: 'Articles Today', value: '247', color: 'text-cyan-500' },
-            { label: 'Trending Now', value: '12', color: 'text-violet-500' },
-            { label: 'Active Readers', value: '8.4k', color: 'text-emerald-500' },
-            { label: 'Avg. Sentiment', value: '+0.42', color: 'text-amber-500' },
-          ].map(stat => (
-            <div key={stat.label} className={`rounded-xl p-2.5 ${isDark ? 'bg-slate-700/50' : 'bg-gray-50/80'}`}>
-              <div className={`text-base font-bold ${stat.color}`} style={{ fontFamily: 'Poppins, sans-serif' }}>{stat.value}</div>
-              <div className="text-xs mt-0.5" style={{ color: mutedColor }}>{stat.label}</div>
-            </div>
-          ))}
+        <div className="grid grid-cols-2 gap-3">
+          <div className={`rounded-xl p-2.5 ${isDark ? 'bg-slate-700/50' : 'bg-gray-50/90'}`}>
+            <p className="text-xs" style={{ color: mutedColor }}>Articles</p>
+            <p className="text-lg font-bold text-cyan-500">{liveArticles.length}</p>
+          </div>
+          <div className={`rounded-xl p-2.5 ${isDark ? 'bg-slate-700/50' : 'bg-gray-50/90'}`}>
+            <p className="text-xs" style={{ color: mutedColor }}>Keywords tracked</p>
+            <p className="text-lg font-bold text-violet-500">{trendingKeywords.length}</p>
+          </div>
         </div>
       </div>
     </div>

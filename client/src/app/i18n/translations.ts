@@ -31,6 +31,7 @@ export interface Translations {
   author: string;
   publishedAt: string;
   readMore: string;
+  loading: string;
   loadMore: string;
   previous: string;
   next: string;
@@ -95,6 +96,7 @@ export const translations: Record<Language, Translations> = {
     author: 'Author',
     publishedAt: 'Published At',
     readMore: 'Read More',
+    loading: 'Loading...',
     loadMore: 'Load More',
     previous: 'Previous',
     next: 'Next',
@@ -157,6 +159,7 @@ export const translations: Record<Language, Translations> = {
     author: 'Penulis',
     publishedAt: 'Diterbitkan',
     readMore: 'Baca Selengkapnya',
+    loading: 'Memuat...',
     loadMore: 'Muat Lebih Banyak',
     previous: 'Sebelumnya',
     next: 'Berikutnya',
@@ -219,6 +222,7 @@ export const translations: Record<Language, Translations> = {
     author: '作者',
     publishedAt: '发布时间',
     readMore: '阅读更多',
+    loading: '加载中...',
     loadMore: '加载更多',
     previous: '上一页',
     next: '下一页',
@@ -281,6 +285,7 @@ export const translations: Record<Language, Translations> = {
     author: '作者',
     publishedAt: '發布時間',
     readMore: '閱讀更多',
+    loading: '載入中...',
     loadMore: '載入更多',
     previous: '上一頁',
     next: '下一頁',

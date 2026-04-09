@@ -17,11 +17,16 @@ nltk.download('punkt_tab', quiet=True)
 # ============================================================
 # STEP 1: LOAD AI MODELS (No Changes Here)
 # ============================================================
-print("⚙️  Loading AI models — this takes ~2 minutes on first run...")
-sentiment_model = pipeline("sentiment-analysis", model="cardiffnlp/twitter-roberta-base-sentiment-latest", truncation=True, max_length=512)
-classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
-ner_model = pipeline("ner", model="dslim/bert-base-NER", aggregation_strategy="simple")
-print("✅ All three AI models loaded.\n")
+print("  Loading AI models — this takes ~2 minutes on first run...")
+sentiment_model = pipeline("sentiment-analysis",
+                            model="cardiffnlp/twitter-roberta-base-sentiment-latest",
+                            truncation=True,
+                            max_length=512)
+classifier = pipeline("zero-shot-classification", 
+                      model="facebook/bart-large-mnli")
+ner_model = pipeline("ner", model="dslim/bert-base-NER", 
+                     aggregation_strategy="simple")
+print("All three AI models loaded.\n")
 
 # ============================================================
 # STEP 2: CONFIGURATION (No Changes Here)
@@ -32,6 +37,83 @@ config.browser_user_agent = USER_AGENT
 config.request_timeout = 15
 SOURCE_CATEGORIES = {"Politics": "https://edition.cnn.com/politics", "Sport": "https://edition.cnn.com/sport", "Business": "https://edition.cnn.com/business"}
 CATEGORY_LABELS = {"Politics": ["politics", "government", "election", "policy", "law"], "Sport": ["sports", "athletics", "game", "match", "tournament"], "Business": ["business", "economy", "finance", "market", "company"]}
+
+SENTIMENT_NEUTRAL_THRESHOLD = 0.55
+SENTIMENT_POLARITY_MARGIN = 0.10
+SENTIMENT_NEUTRAL_POLARITY_CAP = 0.20
+
+
+def normalize_sentiment_label(raw_label: str) -> str:
+    label = str(raw_label).strip().lower()
+
+    if "pos" in label:
+        return "positive"
+    if "neg" in label:
+        return "negative"
+    if "neu" in label:
+        return "neutral"
+
+    label_map = {
+        "label_0": "negative",
+        "label_1": "neutral",
+        "label_2": "positive",
+    }
+    return label_map.get(label, "neutral")
+
+
+def extract_sentiment_probabilities(raw_scores) -> dict:
+    probabilities = {
+        "positive": 0.0,
+        "neutral": 0.0,
+        "negative": 0.0,
+    }
+
+    if not isinstance(raw_scores, list):
+        return probabilities
+
+    for entry in raw_scores:
+        if not isinstance(entry, dict):
+            continue
+
+        label = normalize_sentiment_label(entry.get("label", "neutral"))
+        score = entry.get("score", 0.0)
+
+        try:
+            numeric_score = float(score)
+        except (TypeError, ValueError):
+            continue
+
+        probabilities[label] = max(0.0, min(1.0, numeric_score))
+
+    total = sum(probabilities.values())
+    if total > 0:
+        probabilities = {key: value / total for key, value in probabilities.items()}
+
+    return probabilities
+
+
+def classify_sentiment(probabilities: dict) -> tuple[str, float, float]:
+    positive = probabilities.get("positive", 0.0)
+    neutral = probabilities.get("neutral", 0.0)
+    negative = probabilities.get("negative", 0.0)
+
+    polarity = positive - negative
+    top_label = max(probabilities, key=probabilities.get)
+
+    if neutral >= SENTIMENT_NEUTRAL_THRESHOLD and abs(polarity) <= SENTIMENT_NEUTRAL_POLARITY_CAP:
+        label = "neutral"
+    elif polarity >= SENTIMENT_POLARITY_MARGIN:
+        label = "positive"
+    elif polarity <= -SENTIMENT_POLARITY_MARGIN:
+        label = "negative"
+    else:
+        label = top_label
+
+    label_confidence = probabilities.get(label, 0.0)
+    if label_confidence <= 0:
+        label_confidence = max(probabilities.values())
+
+    return label, label_confidence, polarity
 
 # ============================================================
 # STEP 3: CRAWL ARTICLE LINKS (No Changes Here)
@@ -44,7 +126,7 @@ def crawl_article_links(categories: dict, max_per_category: int = 15) -> list:
     headers = {"User-Agent": USER_AGENT}
     JUNK_PATTERNS = re.compile(r"(getty|reuters|ap photo|shutterstock|afp|file photo|@\w+/|/x$|\.com|\.space|\bfile\b)", re.IGNORECASE)
     for category, page_url in categories.items():
-        print(f"🔍 Crawling {category} ({page_url})...")
+        print(f"Crawling {category} ({page_url})...")
         try:
             response = requests.get(page_url, headers=headers, timeout=15)
             soup = BeautifulSoup(response.text, "html.parser")
@@ -79,7 +161,7 @@ def crawl_article_links(categories: dict, max_per_category: int = 15) -> list:
                     break
             print(f"   → Found {count} candidate URLs for {category}\n")
         except Exception as e:
-            print(f"   ❌ Failed to crawl {category}: {e}\n")
+            print(f"  Failed to crawl {category}: {e}\n")
     return results
 
 
@@ -95,10 +177,8 @@ def ai_filter_articles(candidates: list, confidence_threshold: float = 0.45) -> 
     for item in candidates:
         title = item["title_hint"]
         if PHOTO_CREDIT.search(title):
-            # print(f"   🗑️  Pre-filtered (photo credit): {title[:60]}")
             continue
         if len(title) < 15:
-            # print(f"   🗑️  Pre-filtered (too short): {title[:60]}")
             continue
         labels = CATEGORY_LABELS[item["topic"]]
         try:
@@ -107,9 +187,6 @@ def ai_filter_articles(candidates: list, confidence_threshold: float = 0.45) -> 
             if top_score >= confidence_threshold:
                 item["ai_relevance_score"] = round(top_score, 4)
                 validated.append(item)
-                # print(f"   ✅ Accepted ({top_score:.2f}): {title[:60]}")
-            # else:
-                # print(f"   ⚠️  AI rejected ({top_score:.2f}): {title[:60]}")
         except Exception:
             validated.append(item)
     print(f"\n   → AI validation complete. {len(validated)} articles passed.\n")
@@ -127,7 +204,7 @@ def process_articles(validated_items: list) -> list:
         topic = item["topic"]
 
         try:
-            print(f"⚙️  Processing [{topic}]: {url}")
+            print(f"Processing [{topic}]: {url}")
 
             article = Article(url, config=config)
             article.download()
@@ -150,9 +227,20 @@ def process_articles(validated_items: list) -> list:
                 description = text[:300] + "..."
 
             # ✅ SENTIMENT (still limit input for performance)
-            sentiment_result = sentiment_model(text[:1500])[0]
-            sentiment_label = sentiment_result["label"].lower()
-            sentiment_score = round(sentiment_result["score"], 4)
+            try:
+                raw_sentiment = sentiment_model(text[:1500], top_k=None)
+            except TypeError:
+                raw_sentiment = sentiment_model(text[:1500], return_all_scores=True)
+
+            if isinstance(raw_sentiment, list) and len(raw_sentiment) > 0 and isinstance(raw_sentiment[0], list):
+                raw_scores = raw_sentiment[0]
+            elif isinstance(raw_sentiment, list):
+                raw_scores = raw_sentiment
+            else:
+                raw_scores = [raw_sentiment]
+
+            sentiment_probabilities = extract_sentiment_probabilities(raw_scores)
+            sentiment_label, sentiment_score, sentiment_polarity = classify_sentiment(sentiment_probabilities)
 
             # ✅ NER
             raw_entities = ner_model(text[:1500])
@@ -179,8 +267,13 @@ def process_articles(validated_items: list) -> list:
                 "content": full_content, 
                 "sentiment": {
                     "type": sentiment_label,
-                    "score": sentiment_score,
-                    "comparative": sentiment_score - 0.5
+                    "score": round(sentiment_score, 4),
+                    "comparative": round(sentiment_polarity, 4),
+                    "probabilities": {
+                        "positive": round(sentiment_probabilities["positive"], 4),
+                        "neutral": round(sentiment_probabilities["neutral"], 4),
+                        "negative": round(sentiment_probabilities["negative"], 4),
+                    },
                 },
                 "topic": topic,
                 "keywords": article.keywords,
@@ -190,10 +283,10 @@ def process_articles(validated_items: list) -> list:
 
             processed.append(record)
 
-            print(f"   ✅ Done. FULL article saved ({len(full_content)} chars)\n")
+            print(f"   Done. FULL article saved ({len(full_content)} chars)\n")
 
         except Exception as e:
-            print(f"   ❌ Error: {e}\n")
+            print(f"   Error: {e}\n")
 
     return processed
 
@@ -219,7 +312,7 @@ for category, url in SOURCE_CATEGORIES.items():
     # 3. Slice the high-quality list to get the exact number you want
     final_candidates = validated[:TARGET_PER_CATEGORY]
     final_articles_by_category[category] = final_candidates
-    print(f"➡️  Selected {len(final_candidates)} high-quality articles for {category}.")
+    print(f"Selected {len(final_candidates)} high-quality articles for {category}.")
 
 
 # Combine all the selected articles into one list for processing
@@ -248,12 +341,12 @@ if final_data:
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False, default=str)
     print("=" * 55)
-    print(f"✅ Exported {len(final_data)} articles → {output_path}")
+    print(f"Exported {len(final_data)} articles → {output_path}")
     print("=" * 55)
     df_sentiment = pd.Series([a["sentiment"]["type"] for a in final_data])
-    print("\n📊 Sentiment distribution:")
+    print("\nSentiment distribution:")
     print(df_sentiment.value_counts().to_string())
-    print("\n📄 First article preview:")
+    print("\nFirst article preview:")
     print(json.dumps(final_data[0], indent=2, default=str))
 else:
     print("No articles were successfully processed.")

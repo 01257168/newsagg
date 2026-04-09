@@ -5,10 +5,17 @@ export type NewsTopic = (typeof SUPPORTED_TOPICS)[number];
 export type NewsCategoryFilter = 'all' | 'politics' | 'sport' | 'business';
 export type SentimentType = 'positive' | 'neutral' | 'negative';
 
+export interface NewsSentimentProbabilities {
+    positive: number;
+    neutral: number;
+    negative: number;
+}
+
 export interface NewsSentiment {
     type: SentimentType;
     score: number;
     comparative: number;
+    probabilities: NewsSentimentProbabilities;
 }
 
 export interface NewsEntities {
@@ -85,6 +92,10 @@ const TOPIC_MAP: Record<NewsCategoryFilter, NewsTopic | null> = {
 
 const SENTIMENT_TYPES: SentimentType[] = ['positive', 'neutral', 'negative'];
 
+const clampUnit = (value: number): number => Math.max(0, Math.min(1, value));
+
+const clampSignedUnit = (value: number): number => Math.max(-1, Math.min(1, value));
+
 const asStringArray = (value: unknown): string[] => {
     if (!Array.isArray(value)) {
         return [];
@@ -139,7 +150,7 @@ const normalizeSentiment = (value: unknown): NewsSentiment => {
             value !== null &&
             'score' in value &&
             typeof (value as { score: unknown }).score === 'number'
-            ? (value as { score: number }).score
+            ? clampUnit((value as { score: number }).score)
             : 0;
 
     const comparative =
@@ -147,10 +158,52 @@ const normalizeSentiment = (value: unknown): NewsSentiment => {
             value !== null &&
             'comparative' in value &&
             typeof (value as { comparative: unknown }).comparative === 'number'
-            ? (value as { comparative: number }).comparative
+            ? clampSignedUnit((value as { comparative: number }).comparative)
             : 0;
 
-    return { type, score, comparative };
+    const rawProbabilities =
+        typeof value === 'object' &&
+            value !== null &&
+            'probabilities' in value &&
+            typeof (value as { probabilities: unknown }).probabilities === 'object'
+            ? ((value as { probabilities: Record<string, unknown> }).probabilities ?? {})
+            : {};
+
+    let probabilities: NewsSentimentProbabilities = {
+        positive: typeof rawProbabilities.positive === 'number' ? clampUnit(rawProbabilities.positive) : 0,
+        neutral: typeof rawProbabilities.neutral === 'number' ? clampUnit(rawProbabilities.neutral) : 0,
+        negative: typeof rawProbabilities.negative === 'number' ? clampUnit(rawProbabilities.negative) : 0,
+    };
+
+    const probabilityTotal = probabilities.positive + probabilities.neutral + probabilities.negative;
+    if (probabilityTotal > 0) {
+        probabilities = {
+            positive: probabilities.positive / probabilityTotal,
+            neutral: probabilities.neutral / probabilityTotal,
+            negative: probabilities.negative / probabilityTotal,
+        };
+    } else if (type === 'positive') {
+        probabilities = {
+            positive: score,
+            neutral: 1 - score,
+            negative: 0,
+        };
+    } else if (type === 'negative') {
+        probabilities = {
+            positive: 0,
+            neutral: 1 - score,
+            negative: score,
+        };
+    } else {
+        const split = (1 - score) / 2;
+        probabilities = {
+            positive: split,
+            neutral: score,
+            negative: split,
+        };
+    }
+
+    return { type, score, comparative, probabilities };
 };
 
 const normalizeArticle = (article: unknown): NewsArticle | null => {

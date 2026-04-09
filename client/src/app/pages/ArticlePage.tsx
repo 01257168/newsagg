@@ -1,25 +1,23 @@
-import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { Link, useParams } from 'react-router';
 import { motion } from 'motion/react';
 import { ArrowLeft, Building2, Calendar, Globe, MapPin, User, Users } from 'lucide-react';
 import { useApp } from '../contexts/AppContext';
 import { ImageWithFallback } from '../components/utils/ImageWithFallback';
+import { ArticleSentimentPanel } from '../components/ArticleSentimentPanel';
 import { getArticleById, NewsArticle, SentimentType } from '../services/newsAPI';
 
-const SENTIMENT_STYLE: Record<SentimentType, { label: string; bar: string; badge: string }> = {
+const SENTIMENT_STYLE: Record<SentimentType, { label: string; badge: string }> = {
   positive: {
     label: 'text-emerald-600',
-    bar: 'bg-emerald-500',
     badge: 'bg-emerald-100 text-emerald-700',
   },
   neutral: {
     label: 'text-gray-600',
-    bar: 'bg-gray-500',
     badge: 'bg-gray-100 text-gray-700',
   },
   negative: {
     label: 'text-red-600',
-    bar: 'bg-red-500',
     badge: 'bg-red-100 text-red-700',
   },
 };
@@ -93,14 +91,6 @@ export function ArticlePage() {
 
   const mutedText = isDark ? 'text-slate-400' : 'text-gray-500';
   const bodyText = isDark ? 'text-slate-200' : 'text-gray-700';
-
-  const sentimentPercent = useMemo(() => {
-    if (!article) {
-      return 0;
-    }
-    const clampedScore = Math.max(0, Math.min(1, article.sentiment.score));
-    return Math.round(clampedScore * 100);
-  }, [article]);
 
   if (loading) {
     return (
@@ -233,22 +223,7 @@ export function ArticlePage() {
           transition={{ duration: 0.35, delay: 0.05 }}
           className="space-y-4"
         >
-          <div className={`rounded-2xl border p-5 ${panelBase}`}>
-            <h3 className={`text-sm font-semibold mb-3 ${isDark ? 'text-slate-200' : 'text-gray-800'}`} style={{ fontFamily: 'Poppins, sans-serif' }}>
-              Sentiment
-            </h3>
-
-            <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <span className={`text-sm font-semibold ${sentimentStyle.label}`}>{article.sentiment.type}</span>
-                <span className={`text-sm font-semibold ${sentimentStyle.label}`}>{article.sentiment.score.toFixed(4)}</span>
-              </div>
-              <div className={`h-2 rounded-full overflow-hidden ${isDark ? 'bg-slate-700' : 'bg-gray-200'}`}>
-                <div className={`h-full rounded-full ${sentimentStyle.bar}`} style={{ width: `${sentimentPercent}%` }} />
-              </div>
-              <p className={`text-xs ${mutedText}`}>Confidence: {sentimentPercent}%</p>
-            </div>
-          </div>
+          <ArticleSentimentPanel article={article} isDark={isDark} />
 
           <div className={`rounded-2xl border p-5 ${panelBase}`}>
             <h3 className={`text-sm font-semibold mb-4 ${isDark ? 'text-slate-200' : 'text-gray-800'}`} style={{ fontFamily: 'Poppins, sans-serif' }}>

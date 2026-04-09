@@ -5,6 +5,7 @@ import { useApp } from '../contexts/AppContext';
 import { Activity, Clock3, TrendingUp, Users } from 'lucide-react';
 import {
   getArticleId,
+  getAllArticles,
   getLatestArticles,
   getLiveEngagement,
   getSentimentDistribution,
@@ -89,9 +90,11 @@ export function SentimentPanel() {
     return () => window.clearInterval(intervalId);
   }, []);
 
+  const allArticles = useMemo(() => getAllArticles(), []);
   const sentimentDistribution = useMemo(() => getSentimentDistribution(), []);
   const liveArticles = useMemo(() => getLatestArticles(6), []);
   const trendingKeywords = useMemo(() => getTrendingKeywords(10), []);
+  const allKeywords = useMemo(() => getTrendingKeywords(10000), []);
   const liveEngagement = useMemo(() => getLiveEngagement(tick, 6), [tick]);
 
   const sentimentData = sentimentDistribution.map((item) => ({
@@ -273,11 +276,11 @@ export function SentimentPanel() {
         <div className="grid grid-cols-2 gap-3">
           <div className={`rounded-xl p-2.5 ${isDark ? 'bg-slate-700/50' : 'bg-gray-50/90'}`}>
             <p className="text-xs" style={{ color: mutedColor }}>Articles</p>
-            <p className="text-lg font-bold text-cyan-500">{liveArticles.length}</p>
+            <p className="text-lg font-bold text-cyan-500">{allArticles.length}</p>
           </div>
           <div className={`rounded-xl p-2.5 ${isDark ? 'bg-slate-700/50' : 'bg-gray-50/90'}`}>
             <p className="text-xs" style={{ color: mutedColor }}>Keywords tracked</p>
-            <p className="text-lg font-bold text-violet-500">{trendingKeywords.length}</p>
+            <p className="text-lg font-bold text-violet-500">{allKeywords.length}</p>
           </div>
         </div>
       </div>

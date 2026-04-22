@@ -308,7 +308,8 @@ const buildFailureResponse = (message: string, error: unknown): ServerResponse =
     error: error instanceof Error ? error.message : 'Unknown error',
 });
 
-export const getAllArticles = (): NewsArticle[] => [...normalizedArticles];
+export const getAllArticles = (category: NewsCategoryFilter = 'all'): NewsArticle[] =>
+    [...filterByCategory(normalizedArticles, category)];
 
 export const getArticleId = (article: Pick<NewsArticle, 'url' | 'title'>): string =>
     encodeURIComponent(article.url || article.title);
@@ -322,14 +323,16 @@ export const getArticleById = (articleId: string): NewsArticle | null => {
     }
 };
 
-export const getSentimentDistribution = (): SentimentDistributionItem[] => {
+export const getSentimentDistribution = (category: NewsCategoryFilter = 'all'): SentimentDistributionItem[] => {
     const counts: Record<SentimentType, number> = {
         positive: 0,
         neutral: 0,
         negative: 0,
     };
 
-    normalizedArticles.forEach((article) => {
+    const filteredArticles = filterByCategory(normalizedArticles, category);
+
+    filteredArticles.forEach((article) => {
         counts[article.sentiment.type] += 1;
     });
 
@@ -339,13 +342,14 @@ export const getSentimentDistribution = (): SentimentDistributionItem[] => {
     }));
 };
 
-export const getLatestArticles = (limit = 6): NewsArticle[] =>
-    normalizedArticles.slice(0, Math.max(0, limit));
+export const getLatestArticles = (limit = 6, category: NewsCategoryFilter = 'all'): NewsArticle[] =>
+    filterByCategory(normalizedArticles, category).slice(0, Math.max(0, limit));
 
-export const getTrendingKeywords = (limit = 10): TrendingKeyword[] => {
+export const getTrendingKeywords = (limit = 10, category: NewsCategoryFilter = 'all'): TrendingKeyword[] => {
     const keywordMap = new Map<string, number>();
+    const filteredArticles = filterByCategory(normalizedArticles, category);
 
-    normalizedArticles.forEach((article) => {
+    filteredArticles.forEach((article) => {
         article.keywords.forEach((keyword) => {
             const normalized = keyword.toLowerCase();
             keywordMap.set(normalized, (keywordMap.get(normalized) ?? 0) + 1);
@@ -363,10 +367,15 @@ export const getTrendingKeywords = (limit = 10): TrendingKeyword[] => {
         .map(([keyword, count]) => ({ keyword, count }));
 };
 
-export const getLiveEngagement = (timestamp = Date.now(), limit = 8): LiveEngagementItem[] => {
+export const getLiveEngagement = (
+    timestamp = Date.now(),
+    limit = 8,
+    category: NewsCategoryFilter = 'all'
+): LiveEngagementItem[] => {
     const tick = timestamp / 10000;
+    const filteredArticles = filterByCategory(normalizedArticles, category);
 
-    return normalizedArticles
+    return filteredArticles
         .map((article) => {
             const seed = stableHash(article.title);
             const baseViews = 1200 + (seed % 8500);

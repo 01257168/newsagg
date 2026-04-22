@@ -131,7 +131,7 @@ export function HeroCarousel({ scrollY }: HeroCarouselProps) {
                 <span className="text-white/75 text-xs font-semibold">{article.topic}</span>
                 <span className="text-white/70 text-xs">{article.source.name}</span>
               </div>
-              <h2 className="text-white text-2xl md:text-3xl font-bold leading-tight mb-2 group-hover:text-cyan-300 transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>
+              <h2 className="text-white text-4xl md:text-5xl font-bold leading-tight mb-2 group-hover:text-cyan-300 transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>
                 {article.title}
               </h2>
               <p className="text-white/75 text-sm line-clamp-2 mb-3 max-w-2xl">

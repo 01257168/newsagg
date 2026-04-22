@@ -1,11 +1,19 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowUp } from 'lucide-react';
+import { useLocation } from 'react-router';
 import { useApp } from '../contexts/AppContext';
 
 export function ScrollToTop() {
   const { isDark } = useApp();
+  const { pathname } = useLocation();
   const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    // Only force top when opening an article detail page.
+    if (!pathname.startsWith('/article/')) return;
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => setShow(window.scrollY > 400);

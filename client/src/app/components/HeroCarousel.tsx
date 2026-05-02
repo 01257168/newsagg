@@ -35,7 +35,7 @@ export function HeroCarousel({ scrollY }: HeroCarouselProps) {
   const [loading, setLoading] = useState(true);
 
   const isCompact = scrollY > 280;
-  const heroHeight = isCompact ? 100 : Math.max(420 - scrollY * 0.5, 100);
+  const heroHeight = Math.max(600 - scrollY * 0.5, 100);
 
   useEffect(() => {
     const fetchHeadlines = async () => {
@@ -116,14 +116,12 @@ export function HeroCarousel({ scrollY }: HeroCarouselProps) {
       </AnimatePresence>
 
       {/* Trending badge */}
-      {!isCompact && (
-        <div className="absolute top-4 left-6 flex items-center gap-2 z-10">
-          <div className="flex items-center gap-1.5 bg-cyan-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-lg">
-            <TrendingUp size={11} />
-            {t.topHeadlines}
-          </div>
+      <div className={`absolute top-4 left-6 flex items-center gap-2 z-10 transition-opacity duration-300`} style={{ opacity: isCompact ? 0 : 1, pointerEvents: isCompact ? 'none' : 'auto' }}>
+        <div className="flex items-center gap-1.5 bg-cyan-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-lg">
+          <TrendingUp size={11} />
+          {t.topHeadlines}
         </div>
-      )}
+      </div>
 
       {/* Content */}
       <AnimatePresence mode="wait">
@@ -196,17 +194,15 @@ export function HeroCarousel({ scrollY }: HeroCarouselProps) {
       </button>
 
       {/* Dots indicator */}
-      {!isCompact && (
-        <div className="absolute bottom-4 right-6 flex items-center gap-1.5 z-10">
-          {headlines.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrent(i)}
-              className={`transition-all duration-300 rounded-full ${i === current ? 'w-6 h-2 bg-cyan-400' : 'w-2 h-2 bg-white/50 hover:bg-white/80'}`}
-            />
-          ))}
-        </div>
-      )}
+      <div className={`absolute bottom-4 right-6 flex items-center gap-1.5 z-10 transition-opacity duration-300`} style={{ opacity: isCompact ? 0 : 1, pointerEvents: isCompact ? 'none' : 'auto' }}>
+        {headlines.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`transition-all duration-300 rounded-full ${i === current ? 'w-6 h-2 bg-cyan-400' : 'w-2 h-2 bg-white/50 hover:bg-white/80'}`}
+          />
+        ))}
+      </div>
 
       {/* Progress bar */}
       <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-white/20 z-10">
